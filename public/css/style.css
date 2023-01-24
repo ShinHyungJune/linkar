@@ -256,4 +256,32 @@ html {
     font-size:12px; color:#696969;
 }
 
+.m-input-text input {display:block; width:100%;}
+.m-input-text.type01 {position:relative;}
+.m-input-text.type01 input {width:100%; height:37px; padding:0px 13px; font-size:14px; border:1px solid #e1e1e1; border-radius:5px; background-color:#fafafa;}
+.m-input-text.type01 input[type="date"] {height:auto; padding:0px 13px; background-color:#fff !important;}
+.m-input-text.type01 .m-input-text-deco {position:absolute; right:20px; top:50%; transform:translateY(-50%); color:#979797; font-size:14px;}
 
+.m-input-select.type01  {
+    cursor:pointer;
+    border-radius:0; /* 아이폰 사파리 보더 없애기 */
+    -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+    -moz-appearance: none; /* 화살표 없애기 for firefox*/
+    appearance: none;
+    position:relative;
+}
+.m-input-select.type01::-ms-expand { display: none; }
+
+.m-input-select.type01 {position:relative;}
+.m-input-select.type01 select {width:100%; height:30px; padding:0px 10px; padding-right:60px; border:1px solid #e1e1e1;  background-color:#fff;
+    cursor:pointer;
+    border-radius:0; /* 아이폰 사파리 보더 없애기 */
+    -webkit-appearance: none; /* 화살표 없애기 for chrome*/
+    -moz-appearance: none; /* 화살표 없애기 for firefox*/
+    appearance: none;
+    border-radius:5px;
+    font-size:12px;
+}
+.m-input-select.type01:after {content:""; width:7px; height:5px; position:absolute; right:10px; top:50%;
+    transform:translateY(-50%); background:url("../img/triDown-black.png") no-repeat; background-size:7px auto;}
+.m-input-select.type01 select::-ms-expand { display: none; }
