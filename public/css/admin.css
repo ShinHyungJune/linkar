@@ -72,12 +72,25 @@
 .m-input-withBtn.type01 .m-input-text.type01 {
     flex:auto;
 }
+.m-input-text.type01.with-text {
+    display:flex; align-items: center;
+}
+.m-input-text.type01.with-text .text {
+    font-size:14px; color:#999; white-space: nowrap;
+}
+.m-input-text.type01.with-text input + .text {
+    margin-left:8px;
+}
+.m-input-text.type01.with-text .text + input {
+    margin-left:8px;
+}
 .m-input-text.type01 input {
     width:100%; height:32px;
     padding:0 16px;
     font-size:14px;
     border:1px solid #E4E4E4; border-radius:8px;
 }
+
 label {
     cursor:pointer;
 }
@@ -91,7 +104,7 @@ label {
 }
 .m-input-file.type01 {
     display:flex; align-items: center;
-    width:100%; height:48px;
+    width:100%; height:32px;
     padding:0 16px;
     border:1px solid #E4E4E4; border-radius:8px;
 }
@@ -101,18 +114,35 @@ label {
 .m-input-file.type01 input {
     display:none;
 }
+.m-input-phone.type01 {
+    display:flex; align-items: center;
+}
+.m-input-phone.type01 > div {
+    flex:1;
+}
+.m-input-phone.type01 .deco {
+    flex:0 0 auto;
+    font-size:14px; color:#999; margin:0 4px;
+}
 .m-btns.type01 {
     display:flex; flex-wrap:wrap;
     margin:-6px;
     position:relative; z-index:1;
     text-align: center;
 }
+
 .m-btns.type01 .m-btn-wrap {
     flex:1;
     padding:6px;
 }
 .m-btns.type01 .m-btn.type01 {
     width:100%;
+}
+.m-btns.type02 {
+    display:flex; margin:-4px;
+}
+.m-btns.type02 .m-btn-wrap {
+    padding:4px;
 }
 .m-btn.type01 {
     display:flex; align-items: center; justify-content: center;
@@ -127,15 +157,26 @@ label {
 .m-btn.type01.type-revert {
     border-color:#F25C35; color:#F25C35; background-color:#fff;
 }
-.m-pop.type01 {
+.m-btn.type03 {
     display:flex; align-items: center; justify-content: center;
+    width:22px; height:22px;
+    border:1px solid #585858; border-radius:4px;
+}
+.m-pop.type01 {
+    display:none; align-items: center; justify-content: center;
     width:100%; height:100%; padding:0 20px;
     position:fixed; top:0; left:0;
     z-index:10;
     background-color:rgba(0,0,0,0.5);
 }
+.m-pop.type01.active {
+    display:flex;
+}
+.m-pop.type01 .m-btns {
+    display:flex; margin-top:32px;
+}
 .m-pop.type01 .m-pop-inner {
-    padding:54px 60px;
+    padding:54px 60px; padding-bottom:30px;
     background-color:#fff; border:1px solid #E4E4E4;
     box-shadow:0px 8px 24px rgba(0,0,0,0.08);
     border-radius:8px;
@@ -150,7 +191,7 @@ label {
 }
 .m-pop.type01 .m-pop-inner .m-btn {
     min-width:140px;
-    margin:0 auto; margin-top:32px;
+    margin:0 auto;;
 }
 .mt-40 {
     margin-top:40px;
@@ -237,11 +278,12 @@ label {
 }
 
 .dashboard .sidebar {
-    display:flex; align-items: center;
+    display:flex; align-items: center; flex:0 0 auto;
     width:240px; max-width:77px; height:100vh; padding:0 24px;
     position:relative;
     background-color:#fff; box-shadow:0px 8px 16px rgba(0,0,0,0.08);
     transition:all .3s;
+    overflow:hidden;
 }
 .dashboard .sidebar .logo {
     display:block;
@@ -428,6 +470,19 @@ label {
 .m-input-checkbox.type01 input:checked + label:after {
 
 }
+input[type="checkbox"] {
+    display:none;
+}
+
+.m-input-checkbox.type02 label:before {
+    display:block; margin:0 auto;
+    content:""; width:16px; height:16px;
+    background:url("../images/checkbox-inactive.png") no-repeat; background-size:100%;
+}
+.m-input-checkbox.type02 input:checked + label:before {
+    background:url("../images/checkbox-active.png") no-repeat; background-size:100%;
+}
+
 
 .m-input-dates.type01 {
     display:flex; align-items: center;
@@ -480,6 +535,23 @@ label {
     background:url("../images/radio-active.png") no-repeat;
 }
 
+input[type="radio"] {display:none;}
+
+.m-input-radio.type02 label {
+    padding-left:24px;
+    position:relative;
+    font-size:14px; font-weight:500;
+}
+.m-input-radio.type02 label:before {
+    content:""; width:16px; height:16px;
+    margin-right:12px;
+    position:absolute; left:0; top:0px;
+    background:url("../images/radio-inactive.png") no-repeat;
+}
+.m-input-radio.type02 input:checked + label:before {
+    background:url("../images/radio-active.png") no-repeat;
+}
+
 .bg-black {
     background-color:#585858 !important;
 }
@@ -492,6 +564,11 @@ label {
     padding:0 12px;
     font-weight:500; color:#fff; border-radius:8px; background-color:#F25C35; border:1px solid transparent;
     white-space: nowrap;
+}
+
+.m-comment.type01 {
+    margin-top:8px;
+    font-size:14px; color:#999;
 }
 
 .area-index .section-filter {
@@ -516,13 +593,133 @@ label {
     min-width: 280px;
     padding: 0 12px;
 }
-.area-index .section-table .section-top {
-    display:flex; align-items: center; justify-content: space-between;
+.area-index .section-filter .m-input-wrap .m-inputs {
+    display:flex;
 }
-.area-index .section-table .section-top .title {
+.area-index .section-filter .m-input-wrap .m-inputs > div {
+    margin-right:4px;
+}
+.area-index .section-body {
+    padding:32px 48px;
+}
+.area-index .section-body .fragments {
+    display:flex; margin:-24px;
+}
+.area-index .section-body .fragment-wrap {
+    flex:1; padding:24px;
+}
+.area-index .section-body .fragments .fragment-top {
+    display:flex; align-items: center; justify-content: space-between;
+    margin-bottom:20px;
+}
+.area-index .section-body .fragments .fragment-top .title {
     font-size:18px; font-weight:bold;
 }
-.area-index .section-table .section-top .title .point {
+.area-index .section-body .fragments .fragment-top .title .point {
     margin-left:12px;
     font-weight:500; color:#F25C35;
+}
+
+.area-create .section-body .fragments {
+    display:flex;
+    min-height:calc(100vh - 63px);
+}
+.area-create .section-body .fragments .m-btns.type02 {
+    justify-content: center;
+}
+.area-create .section-body .fragment-side {
+    flex:0 0 auto;
+    width:480px;
+    border-right:1px solid #e1e1e1;
+}
+.area-create .section-body .fragment-side .fragment-top .title {
+    margin-bottom:30px;
+    font-size:18px; font-weight:bold;
+}
+.area-create .section-body .fragment-wrap {
+    padding:32px 40px;
+}
+.area-create .section-body .fragment {
+    padding-bottom:48px; margin-bottom:48px;
+    border-bottom:1px solid #e1e1e1;
+}
+.area-create .section-body .fragment:last-of-type {
+    padding-bottom:0;
+    border-bottom:none;
+}
+.area-create .section-body .fragment-main {
+    flex:auto;
+}
+.area-create .section-body .fragment-main .fragment-wrap-top {
+    display:flex; align-items: center; justify-content: space-between;
+    margin-bottom:32px; padding-bottom:12px;
+    border-bottom:1px solid #E4E4E4;
+}
+.area-create .section-body .fragment-main .fragment-wrap-top .title {
+    position:relative;
+    font-size:24px; font-weight:bold;
+}
+.area-create .section-body .fragment-main .fragment-wrap-top .title:after {
+    content:""; width:100%; height:2px;
+    position:absolute; bottom:-14px; left:0;
+    background-color:#F25C35;
+}
+.area-create .section-body .fragment-main .fragment-top .title {
+    margin-bottom:24px;
+    font-size:20px; font-weight:bold;
+}
+.area-create .section-body .fragment-main .fragment-top .title .m-comment {
+    margin-left:12px;
+}
+.area-create .section-body .fragment-main .divides {
+    display:flex; margin:0 -24px;
+}
+.area-create .section-body .fragment-main .divide-wrap {
+    flex:1; padding:0 24px;
+    border-right:1px solid #e1e1e1;
+}
+.area-create .section-body .fragment-main .divide-wrap:last-of-type {
+    border-right:none;
+}
+.m-table.type01 {
+    width:100%;
+}
+.m-table.type01 th {
+    padding:8px 12px;
+    font-weight:500; font-size:14px;
+    background-color:#E4E4E4;
+    border:1px solid #E4E4E4;
+}
+.m-table.type01 th .star {
+    color:red;
+}
+.m-table.type01 td {
+    padding:8px 12px;
+    font-weight:500; font-size:14px;
+    border:1px solid #E4E4E4;
+    text-align: center;
+}
+.m-table.type02 {
+    width:100%;
+}
+.m-table.type02 .star {
+    color:red;
+}
+.m-table.type02 > tbody > tr > th {
+    min-width:104px; height:32px; padding-right:30px; padding-top:4px; padding-bottom:12px;
+    text-align: left; vertical-align: top;
+    white-space: nowrap;
+}
+.m-table.type02 > tbody > tr > th .sub {
+    margin-top:4px;
+    font-size:14px; color:#999;
+}
+.m-table.type02 > tbody > tr > td {
+    padding-bottom:12px;
+}
+.m-table.type02 > tbody > tr:last-of-type > td {
+    padding-bottom:0;
+}
+.m-table.type02 > tbody > tr:last-of-type > th {
+    padding-bottom:0;
 }
