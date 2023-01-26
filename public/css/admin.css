@@ -824,6 +824,7 @@ input[type="radio"] {display:none;}
 }
 .m-table.type01 .content.type01 .m-btn + .text {
     padding-left:0;
+    color:#000; font-weight:500;
 }
 .m-table-title {
     margin-bottom:8px;
