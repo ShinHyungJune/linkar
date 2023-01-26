@@ -11,6 +11,7 @@ $(document).ready(function(){
     });
 
     $(".m-script-pop").click(function(){
+        $(this).toggleClass("active");
         $($(this).attr("data-target")).toggleClass("active");
     });
 
