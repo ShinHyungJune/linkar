@@ -548,9 +548,11 @@
 
                             <div class="fragment-wrap fragment-main">
                                 <div class="fragment-wrap-top">
-                                    <h3 class="title">
-                                        요금상세
-                                    </h3>
+                                    <div class="m-tabs type01">
+                                        <button class="m-tab active m-script-tab" data-target="#m-tabs-contents">
+                                            요금상세
+                                        </button>
+                                    </div>
 
                                     <div class="m-btns type01">
                                         <div class="m-btn-wrap">
@@ -562,266 +564,271 @@
                                     </div>
                                 </div>
 
-                                <div class="fragment">
-                                    <div class="fragment-top">
-                                        <h3 class="title">
-                                            예약 / 계약
-                                        </h3>
-                                    </div>
+                                <div class="m-tabs-contents" id="m-tabs-contents">
+                                    <div class="m-tabs-content active">
+                                        <div class="fragment">
+                                            <div class="fragment-top">
+                                                <h3 class="title">
+                                                    예약 / 계약
+                                                </h3>
+                                            </div>
 
-                                    <div class="divides">
-                                        <div class="divide-wrap">
-                                            <div class="divide">
-                                                <table class="m-table type02">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>
-                                                            대여기간
-
-                                                            <div class="m-btns type02" style="margin-top:8px">
-                                                                <div class="m-btn-wrap">
-                                                                    <button class="m-btn type03">
-                                                                        <i class="xi-plus"></i>
-                                                                    </button>
-                                                                </div>
-
-                                                                <div class="m-btn-wrap">
-                                                                    <button class="m-btn type03">
-                                                                        <i class="xi-minus"></i>
-                                                                    </button>
-                                                                </div>
-                                                            </div>
-                                                        </th>
-                                                        <td>
-                                                            <table class="m-table type01">
-                                                                <thead>
+                                            <div class="divides">
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
                                                                 <th>
-                                                                    <div class="m-input-checkbox type02">
-                                                                        <input type="checkbox">
-                                                                        <label for=""></label>
+                                                                    대여기간
+
+                                                                    <div class="m-btns type02" style="margin-top:8px">
+                                                                        <div class="m-btn-wrap">
+                                                                            <button class="m-btn type03">
+                                                                                <i class="xi-plus"></i>
+                                                                            </button>
+                                                                        </div>
+
+                                                                        <div class="m-btn-wrap">
+                                                                            <button class="m-btn type03">
+                                                                                <i class="xi-minus"></i>
+                                                                            </button>
+                                                                        </div>
                                                                     </div>
                                                                 </th>
-                                                                <th>대여기간(개월)</th>
-                                                                </thead>
-                                                                <tbody>
-                                                                <tr>
-                                                                    <td>
-                                                                        <div class="m-input-checkbox type02">
-                                                                            <input type="checkbox">
-                                                                            <label for=""></label>
-                                                                        </div>
-                                                                    </td>
-                                                                    <td>
-                                                                        <div class="m-input-text type01 type-small">
-                                                                            <input type="text" placeholder="" style="text-align: center">
-                                                                        </div>
-                                                                    </td>
-                                                                </tr>
-                                                                </tbody>
-                                                            </table>
+                                                                <td>
+                                                                    <table class="m-table type01">
+                                                                        <thead>
+                                                                        <th>
+                                                                            <div class="m-input-checkbox type02">
+                                                                                <input type="checkbox">
+                                                                                <label for=""></label>
+                                                                            </div>
+                                                                        </th>
+                                                                        <th>대여기간(개월)</th>
+                                                                        </thead>
+                                                                        <tbody>
+                                                                        <tr>
+                                                                            <td>
+                                                                                <div class="m-input-checkbox type02">
+                                                                                    <input type="checkbox">
+                                                                                    <label for=""></label>
+                                                                                </div>
+                                                                            </td>
+                                                                            <td>
+                                                                                <div class="m-input-text type01 type-small">
+                                                                                    <input type="text" placeholder="" style="text-align: center">
+                                                                                </div>
+                                                                            </td>
+                                                                        </tr>
+                                                                        </tbody>
+                                                                    </table>
 
-                                                            <p class="m-comment type01">* 1개월 = 30일</p>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                                                    <p class="m-comment type01">* 1개월 = 30일</p>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>면허취득</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <input type="text" placeholder="" style="text-align: right;"><span class="text">년 이상</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>예약 시작 가능일</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <input type="text" placeholder="" style="text-align: right;"><span class="text">영업일 이후</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>예약 시작 최대일</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <input type="text" placeholder="" style="text-align: right;"><span class="text">일 이후 까지</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>차량준비기간</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <input type="text" placeholder="" style="text-align: right;"><span class="text">영업일</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>예약유효기간</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">카드결제</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
+                                                                    </div>
+
+                                                                    <div class="mt-8"></div>
+
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">계좌이체</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    예약변경
+                                                                    <p class="sub">(배반송 시간/주소)</p>
+                                                                </th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">배반송</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>계좌이체 결제기한</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">가계약 후</span><input type="text" placeholder="" style="text-align: right;"><span class="text">영업일</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                        <div class="divide-wrap">
-                                            <div class="divide">
-                                                <table class="m-table type02">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>면허취득</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <input type="text" placeholder="" style="text-align: right;"><span class="text">년 이상</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>예약 시작 가능일</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <input type="text" placeholder="" style="text-align: right;"><span class="text">영업일 이후</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>예약 시작 최대일</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <input type="text" placeholder="" style="text-align: right;"><span class="text">일 이후 까지</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>차량준비기간</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <input type="text" placeholder="" style="text-align: right;"><span class="text">영업일</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>예약유효기간</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">카드결제</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
-                                                            </div>
 
-                                                            <div class="mt-8"></div>
+                                        <div class="fragment">
+                                            <div class="fragment-top">
+                                                <h3 class="title">
+                                                    연장 / 반납
+                                                </h3>
+                                            </div>
 
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">계좌이체</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>
-                                                            예약변경
-                                                            <p class="sub">(배반송 시간/주소)</p>
-                                                        </th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">배반송</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>계좌이체 결제기한</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">가계약 후</span><input type="text" placeholder="" style="text-align: right;"><span class="text">영업일</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                            <div class="divides">
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>반납예정 안내</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">고객대상 : 반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
+                                                                    </div>
+
+                                                                    <div class="mt-8"></div>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">영업담당자 : 반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
+                                                                    </div>
+
+                                                                    <div class="mt-8"></div>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">렌트사 : 반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>결제 고객안내</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">결제</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>연장결제일</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
-                                    </div>
-                                </div>
 
-                                <div class="fragment">
-                                    <div class="fragment-top">
-                                        <h3 class="title">
-                                            연장 / 반납
-                                        </h3>
-                                    </div>
+                                        <div class="fragment">
+                                            <div class="fragment-top">
+                                                <h3 class="title">
+                                                    정산
 
-                                    <div class="divides">
-                                        <div class="divide-wrap">
-                                            <div class="divide">
-                                                <table class="m-table type02">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>반납예정 안내</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">고객대상 : 반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
-                                                            </div>
-
-                                                            <div class="mt-8"></div>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">영업담당자 : 반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
-                                                            </div>
-
-                                                            <div class="mt-8"></div>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">렌트사 : 반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                        <div class="divide-wrap">
-                                            <div class="divide">
-                                                <table class="m-table type02">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>결제 고객안내</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">결제</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <th>연장결제일</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">반납</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일 전</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="fragment">
-                                    <div class="fragment-top">
-                                        <h3 class="title">
-                                            정산
-
-                                            <span class="m-comment type01">
+                                                    <span class="m-comment type01">
                                                 * 수정 시 고객 결제대기 건의 정산(예정)일 수정
                                             </span>
-                                        </h3>
-                                    </div>
-
-                                    <div class="divides">
-                                        <div class="divide-wrap">
-                                            <div class="divide">
-                                                <table class="m-table type02">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>렌트사 <br/>정산기준</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">이용종료일 기준</span><input type="text" placeholder="" style="text-align: right;"><span class="text">개월 뒤</span>
-                                                            </div>
-
-                                                            <div class="mt-8"></div>
-
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">매월</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                                </h3>
                                             </div>
-                                        </div>
-                                        <div class="divide-wrap">
-                                            <div class="divide">
-                                                <table class="m-table type02">
-                                                    <tbody>
-                                                    <tr>
-                                                        <th>영업담당자 <br/>정산기준</th>
-                                                        <td>
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">이용종료일 기준</span><input type="text" placeholder="" style="text-align: right;"><span class="text">개월 뒤</span>
-                                                            </div>
 
-                                                            <div class="mt-8"></div>
+                                            <div class="divides">
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>렌트사 <br/>정산기준</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">이용종료일 기준</span><input type="text" placeholder="" style="text-align: right;"><span class="text">개월 뒤</span>
+                                                                    </div>
 
-                                                            <div class="m-input-text type01 with-text">
-                                                                <span class="text">매월</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
-                                                            </div>
-                                                        </td>
-                                                    </tr>
-                                                    </tbody>
-                                                </table>
+                                                                    <div class="mt-8"></div>
+
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">매월</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>영업담당자 <br/>정산기준</th>
+                                                                <td>
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">이용종료일 기준</span><input type="text" placeholder="" style="text-align: right;"><span class="text">개월 뒤</span>
+                                                                    </div>
+
+                                                                    <div class="mt-8"></div>
+
+                                                                    <div class="m-input-text type01 with-text">
+                                                                        <span class="text">매월</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                     </section>

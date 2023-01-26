@@ -13,4 +13,13 @@ $(document).ready(function(){
     $(".m-script-pop").click(function(){
         $($(this).attr("data-target")).toggleClass("active");
     });
+
+    $(".m-script-tab").click(function(){
+        $(this).parents(".m-tabs").find(".m-tab").removeClass("active");
+        $(this).addClass("active");
+
+        $($(this).attr("data-target")).find(".m-tabs-content").removeClass("active");
+        $($(this).attr("data-target")).find(".m-tabs-content").eq($(this).index()).addClass("active");
+
+    });
 });

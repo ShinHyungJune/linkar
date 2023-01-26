@@ -544,9 +544,9 @@
 
                             <div class="fragment-wrap fragment-main">
                                 <div class="fragment-wrap-top">
-                                    <h3 class="title">
-                                        대여요금제
-                                    </h3>
+                                    <div class="m-tabs type01">
+                                        <button class="m-tab active m-script-tab" data-target="#m-tabs-contents">대여요금제</button>
+                                    </div>
 
                                     <div class="m-btns type01">
                                         <div class="m-btn-wrap">
@@ -558,160 +558,163 @@
                                     </div>
                                 </div>
 
-                                <div class="fragment">
-                                    <div class="fragment-top">
-                                        <div class="left">
-                                            <h3 class="title">
-                                                차량모델
-                                            </h3>
+                                <div class="m-tabs-contents" id="m-tabs-contents">
+                                    <div class="m-tabs-content active">
+                                        <div class="fragment">
+                                            <div class="fragment-top">
+                                                <div class="left">
+                                                    <h3 class="title">
+                                                        차량모델
+                                                    </h3>
 
-                                            <div class="m-input-withBtn type01">
-                                                <div class="m-input-text type01">
-                                                    <input type="text" placeholder="검색어를 입력해주세요.">
+                                                    <div class="m-input-withBtn type01">
+                                                        <div class="m-input-text type01">
+                                                            <input type="text" placeholder="검색어를 입력해주세요.">
+                                                        </div>
+
+                                                        <button class="m-input-btn m-btn type01">검색</button>
+                                                    </div>
                                                 </div>
 
-                                                <button class="m-input-btn m-btn type01">검색</button>
+                                                <div class="right">
+                                                    <div class="m-btns type01">
+                                                        <div class="m-btn-wrap">
+                                                            <a href="#" class="m-btn type02 bg-revert-black">요금 복사</a>
+                                                        </div>
+                                                        <div class="m-btn-wrap">
+                                                            <a href="#" class="m-btn type02 bg-revert-black">요금 붙여넣기</a>
+                                                        </div>
+                                                    </div>
+                                                </div>
                                             </div>
+
+                                            <div class="m-table-wrap type01">
+                                                <table class="m-table type01">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>
+                                                            <div class="m-input-checkbox type02">
+                                                                <input type="checkbox">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </th>
+                                                        <th>
+                                                            No
+                                                        </th>
+                                                        <th>차량모델</th>
+                                                        <th>연료</th>
+
+                                                        <th class="point">1개월</th>
+                                                        <th class="point">2개월</th>
+                                                        <th class="point">3개월</th>
+                                                        <th class="point">6개월</th>
+                                                        <th class="point">12개월</th>
+                                                        <th class="point">24개월</th>
+                                                        <th class="point">36개월</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="m-input-checkbox type02">
+                                                                <input type="checkbox">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            1
+                                                        </td>
+
+                                                        <td>The All New 아반떼</td>
+                                                        <td>가솔린</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="m-input-checkbox type02">
+                                                                <input type="checkbox">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            2
+                                                        </td>
+
+                                                        <td>The All New 아반떼</td>
+                                                        <td>가솔린</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                        <td class="align-right">600,000</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            <div class="m-input-checkbox type02">
+                                                                <input type="checkbox">
+                                                                <label for=""></label>
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            3
+                                                        </td>
+
+                                                        <td>The All New 아반떼</td>
+                                                        <td>하이브리드</td>
+                                                        <td>
+                                                            <div class="m-input-text type01 type-middle">
+                                                                <input type="text" placeholder="요금 입력" class="align-right">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="m-input-text type01 type-middle">
+                                                                <input type="text" placeholder="요금 입력" class="align-right">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="m-input-text type01 type-middle">
+                                                                <input type="text" placeholder="요금 입력" class="align-right">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="m-input-text type01 type-middle">
+                                                                <input type="text" placeholder="요금 입력" class="align-right">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="m-input-text type01 type-middle">
+                                                                <input type="text" placeholder="요금 입력" class="align-right">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="m-input-text type01 type-middle">
+                                                                <input type="text" placeholder="요금 입력" class="align-right">
+                                                            </div>
+                                                        </td>
+                                                        <td>
+                                                            <div class="m-input-text type01 type-middle">
+                                                                <input type="text" placeholder="요금 입력" class="align-right">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+
                                         </div>
 
-                                        <div class="right">
-                                            <div class="m-btns type01">
-                                                <div class="m-btn-wrap">
-                                                    <a href="#" class="m-btn type02 bg-revert-black">요금 복사</a>
-                                                </div>
-                                                <div class="m-btn-wrap">
-                                                    <a href="#" class="m-btn type02 bg-revert-black">요금 붙여넣기</a>
-                                                </div>
-                                            </div>
-                                        </div>
+                                        <p class="m-comment type01">* 신규 계약의 경우 차량 예약 시점에 차량에 맵핑된 요금제로 계약 진행</p>
+                                        <p class="m-comment type01">* 연장 결제의 경우, 계약시점에 맵핑된 요금제 적용 (중도 요금제 변경 시, 기존 계약에는 적용되지 않음)</p>
                                     </div>
-
-                                    <div class="m-table-wrap type01">
-                                        <table class="m-table type01">
-                                            <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    No
-                                                </th>
-                                                <th>차량모델</th>
-                                                <th>연료</th>
-
-                                                <th class="point">1개월</th>
-                                                <th class="point">2개월</th>
-                                                <th class="point">3개월</th>
-                                                <th class="point">6개월</th>
-                                                <th class="point">12개월</th>
-                                                <th class="point">24개월</th>
-                                                <th class="point">36개월</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    1
-                                                </td>
-
-                                                <td>The All New 아반떼</td>
-                                                <td>가솔린</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    2
-                                                </td>
-
-                                                <td>The All New 아반떼</td>
-                                                <td>가솔린</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                                <td class="align-right">600,000</td>
-                                            </tr>
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    3
-                                                </td>
-
-                                                <td>The All New 아반떼</td>
-                                                <td>하이브리드</td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-
                                 </div>
-
-                                <p class="m-comment type01">* 신규 계약의 경우 차량 예약 시점에 차량에 맵핑된 요금제로 계약 진행</p>
-                                <p class="m-comment type01">* 연장 결제의 경우, 계약시점에 맵핑된 요금제 적용 (중도 요금제 변경 시, 기존 계약에는 적용되지 않음)</p>
-
                             </div>
                         </div>
                     </section>
