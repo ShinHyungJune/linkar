@@ -422,6 +422,8 @@
 
             <div class="container-inner">
                 <div class="area-create">
+                    <!-- 팝업 노출/미노출 여부 -> active 클래스 -->
+
                     <!-- 탁송요금제지역 팝업 -->
                     <div class="m-pop type02" id="pop3">
                         <div class="m-pop-inner">
@@ -460,7 +462,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="content type01">
-                                                        <button class="m-btn type03 m-script-pop" data-target=".region1">
+                                                        <button class="m-btn type03 m-script-pop"
+                                                                data-target=".region1">
                                                             <i class="xi-plus inactive"></i>
                                                             <i class="xi-minus active"></i>
                                                         </button>
@@ -530,7 +533,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="content type01">
-                                                        <button class="m-btn type03 m-script-pop" data-target=".region2">
+                                                        <button class="m-btn type03 m-script-pop"
+                                                                data-target=".region2">
                                                             <i class="xi-plus inactive"></i>
                                                             <i class="xi-minus active"></i>
                                                         </button>
@@ -623,7 +627,8 @@
                                                 </td>
                                                 <td>
                                                     <div class="content type01">
-                                                        <button class="m-btn type03 m-script-pop" data-target=".region3">
+                                                        <button class="m-btn type03 m-script-pop"
+                                                                data-target=".region3">
                                                             <i class="xi-plus inactive"></i>
                                                             <i class="xi-minus active"></i>
                                                         </button>
@@ -785,7 +790,8 @@
                             <div class="fragment-wrap fragment-main">
                                 <div class="fragment-wrap-top">
                                     <div class="m-tabs type01">
-                                        <button class="m-tab active m-script-pop" data-target="#m-tabs-contents">탁송요금제</button>
+                                        <button class="m-tab active m-script-pop" data-target="#m-tabs-contents">탁송요금제
+                                        </button>
                                     </div>
 
                                     <div class="m-btns type01">
@@ -797,7 +803,7 @@
 
                                 <div class="m-tabs-contents" id="m-tabs-contents">
                                     <div class="m-tabs-content active">
-                                        <div class="fragment">
+                                        <div class="fragment" style="width:600px;">
                                             <div class="fragment-top">
                                                 <div class="left">
                                                     <h3 class="title">
@@ -808,7 +814,9 @@
                                                 <div class="right">
                                                     <div class="m-btns type01">
                                                         <div class="m-btn-wrap">
-                                                            <a href="#" class="m-btn type02 bg-revert-black">저장</a>
+                                                            <a href="#"
+                                                               class="m-btn type02 bg-revert-black m-script-pop"
+                                                               data-target="#pop3">지역 수정</a>
                                                         </div>
                                                     </div>
                                                 </div>
@@ -831,33 +839,61 @@
                                                     <tr>
                                                         <th rowspan="5" style="border-right:1px solid #ccc;">서울시</th>
                                                         <th>강남구</th>
-                                                        <td>30,000</td>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text" placeholder="" class="align-right">
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>강동구</th>
-                                                        <td >30,000</td>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text" placeholder="" class="align-right">
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>강북구</th>
-                                                        <td >30,000</td>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text" placeholder="" class="align-right">
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>강서구</th>
-                                                        <td >30,000</td>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text" placeholder="" class="align-right">
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>기타</th>
-                                                        <td>30,000</td>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text" placeholder="" class="align-right">
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>인천시</th>
                                                         <th>전지역</th>
-                                                        <td>40,000</td>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text" placeholder="" class="align-right">
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     <tr>
                                                         <th>경기도</th>
                                                         <th>전지역</th>
-                                                        <td>45,000</td>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text" placeholder="" class="align-right">
+                                                            </div>
+                                                        </td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
