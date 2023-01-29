@@ -1,4 +1,8 @@
 $(document).ready(function(){
+    $(".dashboard .sidebar > .menus > .menu-wrap").eq(0).click(function(){
+        $(this).find("input").focus();
+    });
+
     $(".sidebar .menu").click(function(){
         let isActive = $(this).hasClass("active");
 
