@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>[관리자] 5.1. 대여요금제 관리</title>
+    <title>[관리자] 9.4. 자주하는 질문</title>
     <link rel="stylesheet" type="text/css" href="../../css/common.css">
     <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
@@ -410,8 +410,8 @@
         <div class="container">
             <header class="header">
                 <div class="left">
-                    <h3 class="title">대여요금제 관리</h3>
-                    <a href="#" class="btn">대여요금제 등록</a>
+                    <h3 class="title">자주하는 질문 관리</h3>
+                    <a href="#" class="btn">자주하는 질문 등록</a>
                 </div>
 
                 <div class="right">
@@ -425,162 +425,12 @@
             <div class="container-inner">
                 <!-- 팝업 노출/미노출 여부 -> active 클래스 -->
 
-                <!-- input 들어간 팝업 -->
-                <div class="m-pop type01 active" id="pop1">
+                <!-- 삭제 팝업 -->
+                <div class="m-pop type01" id="pop3">
                     <div class="m-pop-inner">
-                        <h3 class="title">정산정보 변경</h3>
-
-                        <div class="body">
-                            <table class="m-table type02">
-                                <tbody>
-                                <tr>
-                                    <th>
-                                        <div class="m-input-checkbox type03">
-                                            <input type="checkbox">
-                                            <label for="">
-                                                정산상태
-                                            </label>
-                                        </div>
-                                    </th>
-                                    <td>
-                                        <div class="m-input-select type01">
-                                            <select name="" id="">
-                                                <option value="">대기</option>
-                                            </select>
-                                        </div>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>
-                                        <div class="m-input-checkbox type03">
-                                            <input type="checkbox">
-                                            <label for="">
-                                                정산(예정)일
-                                            </label>
-                                        </div>
-                                    </th>
-                                    <td>
-                                        <div class="m-input-text type01">
-                                            <input type="date">
-                                        </div>
-                                    </td>
-                                </tr>
-                                </tbody>
-                            </table>
-                        </div>
-
-                        <div class="m-btns type01">
-                            <div class="m-btn-wrap">
-                                <button class="m-btn type01 m-script-pop" data-target="#pop1">확인</button>
-                            </div>
-
-                            <div class="m-btn-wrap">
-                                <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop1">취소</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 내용 팝업 -->
-                <div class="m-pop type01" id="pop2">
-                    <div class="m-pop-inner">
-                        <h3 class="title">정산정보 변경</h3>
-
-                        <div class="body">내용입니다</div>
-
-                        <div class="m-btns type01">
-                            <div class="m-btn-wrap">
-                                <button class="m-btn type01 m-script-pop" data-target="#pop2">확인</button>
-                            </div>
-
-                            <div class="m-btn-wrap">
-                                <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop2">취소</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-                <!-- 어드민 안내문 수진자 관리 팝업 -->
-                <div class="m-pop type02 active" id="pop3">
-                    <div class="m-pop-inner">
-                        <h3 class="title">어드민 안내문수신자 관리</h3>
-
-                        <div class="body">
-                            <div class="m-top type01">
-                                <h3 class="m-top-title">
-                                    계좌이체 내역
-                                    <span class="sub">총 4건</span>
-                                </h3>
-
-                                <div class="m-top-btns">
-                                    <div class="m-btn-wrap">
-                                        <a href="#" class="m-btn type02 bg-revert-black">추가</a>
-                                    </div>
-                                    <div class="m-btn-wrap">
-                                        <a href="#" class="m-btn type02 bg-revert-black">삭제</a>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="mt-8"></div>
-
-                            <div class="m-table-wrap type03">
-                                <table class="m-table type01">
-                                    <thead>
-                                    <tr>
-                                        <th>
-                                            <div class="m-input-checkbox type02">
-                                                <input type="checkbox">
-                                                <label for=""></label>
-                                            </div>
-                                        </th>
-                                        <th>No</th>
-                                        <th>성함</th>
-                                        <th>연락처</th>
-                                        <th>ID(이메일)</th>
-                                    </tr>
-                                    </thead>
-                                    <tbody>
-                                    <tr>
-                                        <td>
-                                            <div class="m-input-checkbox type02">
-                                                <input type="checkbox">
-                                                <label for=""></label>
-                                            </div>
-                                        </td>
-                                        <td>1</td>
-                                        <td>홍길동</td>
-                                        <td>010-0000-0000</td>
-                                        <td>aaa@naver.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="m-input-checkbox type02">
-                                                <input type="checkbox">
-                                                <label for=""></label>
-                                            </div>
-                                        </td>
-                                        <td>2</td>
-                                        <td>홍길동</td>
-                                        <td>010-0000-0000</td>
-                                        <td>aaa@naver.com</td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div class="m-input-checkbox type02">
-                                                <input type="checkbox">
-                                                <label for=""></label>
-                                            </div>
-                                        </td>
-                                        <td>3</td>
-                                        <td>홍길동</td>
-                                        <td>010-0000-0000</td>
-                                        <td>aaa@naver.com</td>
-                                    </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                        </div>
+                        <h3 class="title">
+                            선택한 자주하는 질문을 삭제하시겠어요?
+                        </h3>
 
                         <div class="m-btns type01">
                             <div class="m-btn-wrap">
@@ -600,78 +450,17 @@
                             <div class="left">
                                 <div class="inputs">
                                     <div class="m-input-wrap">
-                                        <h3 class="m-input-title">기간조회</h3>
-
+                                        <h3 class="m-input-title">제목/내용</h3>
                                         <div class="m-inputs">
                                             <div class="m-input-select type01">
                                                 <select name="" id="">
-                                                    <option value="">선택</option>
+                                                    <option value="">전체</option>
                                                 </select>
                                             </div>
 
-                                            <div class="m-input-dates type01">
-                                                <div class="m-input-text type01">
-                                                    <input type="date">
-                                                </div>
-                                                <span class="deco">~</span>
-                                                <div class="m-input-text type01">
-                                                    <input type="date">
-                                                </div>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
                                             </div>
-
-                                            <div class="m-input-checkboxes type01">
-                                                <div class="m-input-checkbox-wrap">
-                                                    <div class="m-input-checkbox type01">
-                                                        <input type="radio" id="" checked>
-                                                        <label for="">1개월</label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="m-input-checkbox-wrap">
-                                                    <div class="m-input-checkbox type01">
-                                                        <input type="radio" id="">
-                                                        <label for="">3개월</label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="m-input-checkbox-wrap">
-                                                    <div class="m-input-checkbox type01">
-                                                        <input type="radio" id="">
-                                                        <label for="">6개월</label>
-                                                    </div>
-                                                </div>
-
-                                                <div class="m-input-checkbox-wrap">
-                                                    <div class="m-input-checkbox type01">
-                                                        <input type="radio" id="">
-                                                        <label for="">전체</label>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="m-input-wrap">
-                                        <div class="m-input-title">사용여부</div>
-                                        <div class="m-input-text type01">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div class="inputs">
-                                    <div class="m-input-wrap">
-                                        <h3 class="m-input-title">회원정보</h3>
-                                        <div class="m-input-select type01">
-                                            <select name="" id="">
-                                                <option value="">전체</option>
-                                            </select>
-                                        </div>
-                                    </div>
-
-                                    <div class="m-input-wrap">
-                                        <div class="m-input-text type01">
-                                            <input type="date" placeholder="">
                                         </div>
                                     </div>
                                 </div>
@@ -691,103 +480,49 @@
                     </section>
 
                     <section class="section-body">
-                        <div class="fragments">
-                            <div class="fragment-wrap">
-                                <div class="fragment">
-                                    <div class="fragment-top">
-                                        <h3 class="title">
-                                            어드민 내역
-                                            <span class="point">총 4건</span>
-                                        </h3>
+                        <div class="m-tabs type01">
+                            <a href="#" class="m-tab active">
+                                가입
+                            </a>
+                            <a href="#" class="m-tab">
+                                예약/계약
+                            </a>
+                            <a href="#" class="m-tab">
+                                이용
+                            </a>
+                            <a href="#" class="m-tab">
+                                반납
+                            </a>
+                            <a href="#" class="m-tab">
+                                결제
+                            </a>
+                        </div>
 
-                                        <div class="m-btns type01">
-                                            <div class="m-btn-wrap">
-                                                <a href="#" class="m-btn type02 bg-revert-black">정산정보 변경</a>
-                                            </div>
-                                            <div class="m-btn-wrap">
-                                                <a href="#" class="m-btn type02 bg-revert-black">수수료 수기조정</a>
-                                            </div>
-                                            <div class="m-btn-wrap">
-                                                <a href="#" class="m-btn type02 bg-revert-black">엑셀다운로드</a>
-                                            </div>
-                                        </div>
-                                    </div>
+                        <div class="mt-40"></div>
 
-                                    <div class="m-table-wrap">
-                                        <table class="m-table type01">
-                                            <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    텍스트
-                                                </th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    1
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                        <div class="m-faqs type01">
+                            <div class="m-faq">
+                                <div class="m-faq-head">
+                                    <h3 class="title">고객 가입은 어떻게 하나요?</h3>
 
-                                    <div class="mt-24"></div>
+                                    <i class="xi-angle-down"></i>
+                                </div>
+                                <div class="m-faq-body">고객은 모바일에서 직접 가입할 수 있습니다.
+                                    차량 예약 후 생성되는 계약 URL을 고객에게 전달해 가입 후 계약을 진행할 수 있도록 해주세요.
+                                </div>
+                            </div>
+                            <div class="m-faq">
+                                <div class="m-faq-head">
+                                    <h3 class="title">탈퇴는 어떻게 하나요?</h3>
 
-                                    <div class="m-table-sub">
-                                        <table class="m-table type01">
-                                            <tbody>
-                                            <tr>
-                                                <th rowspan="4" class="point">요약</th>
-                                                <th>정산상태</th>
-                                                <th>고객 총 결제액</th>
-                                                <th>카드수수료</th>
-                                                <th>카드수수료</th>
-                                                <th>플랫폼수수료</th>
-                                                <th>렌트사 정산액</th>
-                                            </tr>
-                                            <tr>
-                                                <td>대기</td>
-                                                <td>1</td>
-                                                <td class="align-right">10,000</td>
-                                                <td class="align-right">-</td>
-                                                <td class="align-right">-750</td>
-                                                <td class="align-right">9,250</td>
-                                            </tr>
-                                            <tr>
-                                                <td>완료</td>
-                                                <td>3</td>
-                                                <td class="align-right">630,000</td>
-                                                <td class="align-right">-14,175</td>
-                                                <td class="align-right">-46,187</td>
-                                                <td class="align-right">569,630</td>
-                                            </tr>
-                                            <tr>
-                                                <th>계</th>
-                                                <th>4</th>
-                                                <th class="align-right">640,000</th>
-                                                <th class="align-right">-14,175</th>
-                                                <th class="align-right">-46,937</th>
-                                                <th class="align-right">578,888</th>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
+                                    <i class="xi-angle-down"></i>
+                                </div>
+                                <div class="m-faq-body">고객은 모바일에서 직접 가입할 수 있습니다.
+                                    차량 예약 후 생성되는 계약 URL을 고객에게 전달해 가입 후 계약을 진행할 수 있도록 해주세요.
                                 </div>
                             </div>
                         </div>
+
                     </section>
                 </div>
             </div>

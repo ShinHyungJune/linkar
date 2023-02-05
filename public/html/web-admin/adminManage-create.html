@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[관리자] 4.1.1. 어드민 관리_등록</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<div id="app">
+    <div class="dashboard">
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img src="../../images/logo.png" alt="">
+            </a>
+
+            <div class="menus">
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu00.png" alt="">
+                        </div>
+
+                        <div class="m-input-text type02 right">
+                            <input type="text" placeholder="메뉴명">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu01.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            즐겨찾기
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu active">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu02.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            기본정보 관리
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu03.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            사용자 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu04.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            요금제 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu05.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 예약
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu06.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 대여 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu07.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            정산 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu08.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            고객 센터
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu09.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            일반관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <header class="header">
+                <div class="left">
+                    <h3 class="title">렌트사 등록</h3>
+                </div>
+
+                <div class="right">
+                    <h3 class="title">00영업사 <span class="point">홍길동 님</span></h3>
+
+                    <a href="#" class="btn">로그아웃</a>
+                </div>
+            </header>
+
+            <div class="container-inner">
+                <div class="area-create">
+                    <!-- 팝업 노출/미노출 여부 -> active 클래스 -->
+                    <!-- 회원정보 취소문의팝업 -->
+                    <div class="m-pop type01" id="pop1">
+                        <div class="m-pop-inner">
+                            <h3 class="title">회원 정보 등록을 취소하시겠어요?</h3>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop1">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop1">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 등록완료 문의팝업 -->
+                    <div class="m-pop type01" id="pop2">
+                        <div class="m-pop-inner">
+                            <h3 class="title">어드민 회원 등록을 완료하시겠어요?</h3>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop2">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop2">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="section-body">
+                        <div class="fragments">
+                            <div class="fragment-wrap fragment-main">
+                                <div class="fragment">
+                                    <div class="divides">
+                                        <div class="divide-wrap">
+                                            <div class="divide">
+                                                <div class="fragment-top">
+                                                    <h3 class="title">
+                                                        회원 정보
+                                                    </h3>
+                                                </div>
+
+                                                <table class="m-table type02">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            성함
+                                                        </th>
+                                                        <td>
+                                                            <div class="m-input-text type01">
+                                                                <input type="text">
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            연락처
+                                                        </th>
+                                                        <td>
+                                                            <div class="m-input-phone type01">
+                                                                <div class="m-input-text type01">
+                                                                    <input type="text">
+                                                                </div>
+                                                                <span class="deco">-</span>
+                                                                <div class="m-input-text type01">
+                                                                    <input type="text">
+                                                                </div>
+                                                                <span class="deco">-</span>
+                                                                <div class="m-input-text type01">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>
+                                                            이메일
+                                                        </th>
+                                                        <td>
+                                                            <div class="m-input-phone type01">
+                                                                <div class="m-input-text type01">
+                                                                    <input type="text">
+                                                                </div>
+                                                                <span class="deco">@</span>
+                                                                <div class="m-input-text type01">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>탈퇴회원<br/>조회여부</th>
+                                                        <td>
+                                                            <div class="m-input-radios type01">
+                                                                <div class="m-input-radio-wrap">
+                                                                    <div class="m-input-radio type02">
+                                                                        <input type="radio">
+                                                                        <label for="">사용</label>
+                                                                    </div>
+                                                                </div>
+
+                                                                <div class="m-input-radio-wrap">
+                                                                    <div class="m-input-radio type02">
+                                                                        <input type="radio">
+                                                                        <label for="">미사용</label>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="divide-wrap">
+                                            <div class="divide">
+                                                <div class="fragment-top">
+                                                    <h3 class="title">
+                                                        안내문 수신 관리
+                                                    </h3>
+                                                </div>
+
+                                                <table class="m-table type02">
+                                                    <tbody>
+                                                    <tr>
+                                                        <th>
+                                                            수신여부
+                                                        </th>
+                                                        <td>
+                                                            <div class="m-inputs" style="display:flex;">
+                                                                <div class="m-input-radio type02" style="margin-right:8px;">
+                                                                    <input type="radio">
+                                                                    <label for="">수신</label>
+                                                                </div>
+
+                                                                (
+                                                                <div class="m-input-checkboxes type01">
+                                                                    <div class="m-input-checkbox-wrap">
+                                                                        <div class="m-input-checkbox type03">
+                                                                            <input type="checkbox">
+                                                                            <label for="">문자</label>
+                                                                        </div>
+                                                                    </div>
+
+                                                                    <div class="m-input-checkbox-wrap">
+                                                                        <div class="m-input-checkbox type03">
+                                                                            <input type="checkbox">
+                                                                            <label for="">이메일</label>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                )
+                                                            </div>
+
+                                                            <div class="mt-8"></div>
+
+                                                            <div class="m-inputs">
+                                                                <div class="m-input-radio type02" style="margin-right:8px;">
+                                                                    <input type="radio">
+                                                                    <label for="">미수신</label>
+                                                                </div>
+                                                            </div>
+                                                        </td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-btns type02">
+                                    <div class="m-btn-wrap">
+                                        <div class="m-btn-wrap">
+                                            <button class="m-btn type02">등록</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-btn-wrap">
+                                        <div class="m-btn-wrap">
+                                            <button class="m-btn type02 bg-black">취소</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

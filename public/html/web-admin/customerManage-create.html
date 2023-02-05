@@ -1,0 +1,930 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[관리자] 4.4.1. 고객 관리_등록</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<div id="app">
+    <div class="dashboard">
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img src="../../images/logo.png" alt="">
+            </a>
+
+            <div class="menus">
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu00.png" alt="">
+                        </div>
+
+                        <div class="m-input-text type02 right">
+                            <input type="text" placeholder="메뉴명">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu01.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            즐겨찾기
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu active">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu02.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            기본정보 관리
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu03.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            사용자 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu04.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            요금제 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu05.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 예약
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu06.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 대여 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu07.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            정산 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu08.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            고객 센터
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu09.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            일반관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <header class="header">
+                <div class="left">
+                    <h3 class="title">고객 관리_등록</h3>
+                </div>
+
+                <div class="right">
+                    <h3 class="title">00영업사 <span class="point">홍길동 님</span></h3>
+
+                    <a href="#" class="btn">로그아웃</a>
+                </div>
+            </header>
+
+            <div class="container-inner">
+                <div class="area-create">
+                    <!-- 팝업 노출/미노출 여부 -> active 클래스 -->
+
+                    <!-- 결제수단설정 팝업 -->
+                    <div class="m-pop type01" id="pop1">
+                        <div class="m-pop-inner">
+                            <h3 class="title">
+                                선택한 결제수단을
+                                <br/>주결제 수단으로 설정하시겠어요?
+                            </h3>
+
+                            <p class="body">
+                                주결제 수단 설정 시 연장결제, 반납결제 등
+                                <br/>자동결제 수단으로 사용됩니다.
+                            </p>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop1">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop1">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 운전면허상세 팝업 -->
+                    <div class="m-pop type01" id="pop0">
+                        <div class="m-pop-inner">
+                            <h3 class="title">운전면허 상세</h3>
+
+                            <div class="body">
+                                <table class="m-table type02">
+                                    <tbody>
+                                    <tr>
+                                        <th>먼허구분</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>면허번호</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>발급일</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>등록일시</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="date">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop0">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop0">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 결제수단 등록 팝업 -->
+                    <div class="m-pop type01" id="pop2">
+                        <div class="m-pop-inner" style="max-width:600px;">
+                            <h3 class="title">결제수단 등록</h3>
+
+                            <div class="body">
+                                <table class="m-table type02">
+                                    <tbody>
+                                    <tr>
+                                        <th>결제수단</th>
+                                        <td>
+                                            <div class="m-input-radios type01">
+                                                <div class="m-input-radio-wrap">
+                                                    <div class="m-input-radio type02">
+                                                        <input type="radio">
+                                                        <label for="">카드결제</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-radio-wrap">
+                                                    <div class="m-input-radio type02">
+                                                        <input type="radio">
+                                                        <label for="">계좌이체</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>주결제수단</th>
+                                        <td>
+                                            <div class="m-input-radios type01">
+                                                <div class="m-input-radio-wrap">
+                                                    <div class="m-input-radio type02">
+                                                        <input type="radio">
+                                                        <label for="">설정</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-radio-wrap">
+                                                    <div class="m-input-radio type02">
+                                                        <input type="radio">
+                                                        <label for="">미설정</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드유형</th>
+                                        <td>
+                                            <div class="m-input-select type01">
+                                                <select name="" id="">
+                                                    <option value="">선택</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드번호</th>
+                                        <td>
+                                            <div class="m-input-phone type01">
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                                <span class="deco">-</span>
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                                <span class="deco">-</span>
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                                <span class="deco">-</span>
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>유효기간</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="date">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>생년월일</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop2">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop2">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 결제수단삭제 팝업 -->
+                    <div class="m-pop type01" id="pop3">
+                        <div class="m-pop-inner">
+                            <h3 class="title">
+                                선택한 결제수단을 삭제하시겠어요?
+                            </h3>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop3">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop3">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 취소 팝업 -->
+                    <div class="m-pop type01" id="pop4">
+                        <div class="m-pop-inner">
+                            <h3 class="title">
+                                회원 정보 등록을 취소하시겠어요?
+                            </h3>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop4">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop4">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 고객등록 팝업 -->
+                    <div class="m-pop type01" id="pop5">
+                        <div class="m-pop-inner">
+                            <h3 class="title">
+                                고객 등록을 완료하시겠어요?
+                            </h3>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop5">확인</button>
+                                </div>
+
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop5">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <section class="section-body">
+                        <div class="fragments">
+                            <div class="fragment-wrap fragment-main">
+                                <div class="fragment">
+                                    <div class="divides">
+                                        <div class="divide-wrap">
+                                            <div class="divide">
+
+                                                <div class="fragment">
+                                                    <div class="fragment-top">
+                                                        <h3 class="title">
+                                                            회원 정보
+                                                        </h3>
+                                                    </div>
+
+                                                    <table class="m-table type02">
+                                                        <tbody>
+                                                        <tr>
+                                                            <th>
+                                                                성함
+                                                            </th>
+                                                            <td>
+                                                                <div class="m-input-text type01">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>
+                                                                ID(이메일)
+                                                            </th>
+                                                            <td>
+                                                                <div class="m-input-phone type01">
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <span class="deco">@</span>
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="text">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>성별</th>
+                                                            <td>
+                                                                <div class="m-input-select type01">
+                                                                    <select name="" id="">
+                                                                        <option value="">선택</option>
+                                                                    </select>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>생년월일</th>
+                                                            <td>
+                                                                <div class="m-input-text type01">
+                                                                    <input type="text">
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>연락처</th>
+                                                            <td>
+                                                                <div class="m-input-phone type01">
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <span class="deco">-</span>
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="text">
+                                                                    </div>
+                                                                    <span class="deco">-</span>
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="text">
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>운전면허</th>
+                                                            <td>
+                                                                <div class="m-input-withBtn type01">
+                                                                    <div class="m-input m-input-text type01">
+                                                                        <input type="text" placeholder="" disabled>
+                                                                    </div>
+
+                                                                    <button class="m-input-btn m-btn type01">상세</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        <tr>
+                                                            <th>주소</th>
+                                                            <td>
+                                                                <div class="m-input-withBtn type01">
+                                                                    <div class="m-input m-input-text type01">
+                                                                        <input type="text" placeholder="" disabled>
+                                                                    </div>
+
+                                                                    <button class="m-input-btn m-btn type01">검색</button>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="divide-wrap">
+                                            <div class="divide">
+                                                <div class="fragment">
+                                                    <div class="fragment-top">
+                                                        <div class="left">
+                                                            <h3 class="title">
+                                                                결제수단
+                                                            </h3>
+                                                        </div>
+
+                                                        <div class="right">
+                                                            <div class="m-btns type01">
+                                                                <div class="m-btn-wrap">
+                                                                    <a href="#" class="m-btn type02 bg-black">주결제 설정</a>
+                                                                </div>
+                                                                <div class="m-btn-wrap">
+                                                                    <a href="#" class="m-btn type02 bg-black">등록</a>
+                                                                </div>
+                                                                <div class="m-btn-wrap">
+                                                                    <a href="#" class="m-btn type02 bg-revert-black">삭제</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="m-table-wrap type01">
+                                                        <table class="m-table type01">
+                                                            <thead>
+                                                            <tr>
+                                                                <th>
+                                                                    <div class="m-input-checkbox type02">
+                                                                        <input type="checkbox">
+                                                                        <label for=""></label>
+                                                                    </div>
+                                                                </th>
+                                                                <th>결제수단</th>
+                                                                <th>결제정보</th>
+                                                                <th>상세보기</th>
+                                                            </tr>
+                                                            </thead>
+                                                            <tbody>
+                                                            <tr>
+                                                                <td>
+                                                                    <div class="m-input-checkbox type02">
+                                                                        <input type="checkbox">
+                                                                        <label for=""></label>
+                                                                    </div>
+                                                                </td>
+                                                                <td><span class="point">(주결제)</span> 게좌이체</td>
+                                                                <td>국민은행 (주시획사@@)</td>
+                                                                <td>
+                                                                    <a href="#" class="m-btn type02 bg-revert-black" target="_blank">상세</a>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
+
+                                                <div class="fragment">
+                                                    <div class="fragment-top">
+                                                        <h3 class="title">
+                                                            마케팅 수신여부
+                                                        </h3>
+                                                    </div>
+
+                                                    <table class="m-table type02">
+                                                        <tbody>
+                                                        <tr>
+                                                            <th>
+                                                                수신여부
+                                                            </th>
+                                                            <td>
+                                                                <div class="m-inputs" style="display:flex;">
+                                                                    <div class="m-input-radio type02" style="margin-right:8px;">
+                                                                        <input type="radio">
+                                                                        <label for="">수신</label>
+                                                                    </div>
+
+                                                                    (
+                                                                    <div class="m-input-checkboxes type01">
+                                                                        <div class="m-input-checkbox-wrap">
+                                                                            <div class="m-input-checkbox type03">
+                                                                                <input type="checkbox">
+                                                                                <label for="">문자</label>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="m-input-checkbox-wrap">
+                                                                            <div class="m-input-checkbox type03">
+                                                                                <input type="checkbox">
+                                                                                <label for="">이메일</label>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    )
+                                                                </div>
+
+                                                                <div class="mt-8"></div>
+
+                                                                <div class="m-inputs">
+                                                                    <div class="m-input-radio type02" style="margin-right:8px;">
+                                                                        <input type="radio">
+                                                                        <label for="">미수신</label>
+                                                                    </div>
+                                                                </div>
+                                                            </td>
+                                                        </tr>
+                                                        </tbody>
+                                                    </table>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-btns type02">
+                                    <div class="m-btn-wrap">
+                                        <div class="m-btn-wrap">
+                                            <button class="m-btn type02">등록</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-btn-wrap">
+                                        <div class="m-btn-wrap">
+                                            <button class="m-btn type02 bg-black">취소</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </section>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>

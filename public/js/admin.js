@@ -25,6 +25,16 @@ $(document).ready(function(){
 
         $($(this).attr("data-target")).find(".m-tabs-content").removeClass("active");
         $($(this).attr("data-target")).find(".m-tabs-content").eq($(this).index()).addClass("active");
+    });
 
+    let active = null;
+
+    $(".m-faq-head").click(function(){
+        active = $(this).parents(".m-faq").hasClass("active");
+
+        $(".m-faq").removeClass("active");
+
+        active ? $(this).parents(".m-faq").removeClass("active")
+                : $(this).parents(".m-faq").addClass("active");
     });
 });
