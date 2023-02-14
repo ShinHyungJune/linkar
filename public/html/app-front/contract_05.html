@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[앱] 메인</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/app.css?A=1">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/common2.js"></script>
+</head>
+<body>
+	<!-- 헤더 영역 -->
+	<header>
+		<div class="head-side">
+			<a href="" class="icon icon-back">이전으로</a>
+		</div>
+		<div class="head-title">
+			<h1>계약 내역</h1>
+		</div>
+		<div class="head-side">
+		</div>
+	</header>
+
+	<!-- 내용 영역 -->
+	<section class="pt0">
+		<div class="container">
+			<div class="gray-box full">
+				<div class="title-box">
+					<sub>계약번호 000002</sub>
+					<h2><b class="mb0">2022/11/07 ~ 2023/05/06 (6개월)</b></h2>
+				</div>
+			</div>
+			<div class="toggle-box my24">
+				<ul class="list">
+					<li class="list-item active">
+						<div class="toggle-head">
+							<div class="list-title-box">
+								<dl>
+									<dd>
+										<div class="tit">
+											<strong>계약자</strong>
+										</div>
+										<div class="cont">
+											<p>[법인] 주식회사 @@전자</p>
+										</div>
+									</dd>
+									<dd>
+										<div class="tit">
+											<strong>보증금</strong>
+											<sub>보증금은 반납완료 후 환불</sub>
+										</div>
+										<div class="cont">
+											<p>100,000원</p>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<div class="gray-box mt20">
+								<div class="list-space-box">
+									<ul>
+										<li class="flex-vc">
+											<p>총 결제금액</p>
+											<p><b class="f20">640,000원</b></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<button type="button" onclick="toggle(this);">더보기</button>
+						</div>
+						<div class="toggle-body">
+							<div class="gray-box">
+								<div class="list-space-box bd">
+									<ul>
+										<li class="disabled">
+											<time>2022.10.29</time>
+											<p class="f16"><b class="f16 mr5">대여료</b>1회차</p>
+											<p><b class="f20">660,000원</b></p>
+										</li>
+										<li>			 
+											<time>2022.10.29</time>
+											<p class="f16"><b class="f16 mr5">대여료</b>1회차</p>
+											<p><b class="f20">660,000원</b></p>
+										</li>
+										<li>			 
+											<time>2022.10.29</time>
+											<p class="f16"><b class="f16">배송비</b></p>
+											<p><b class="f20">40,000원</b></p>
+										</li>
+										<li>			 
+											<time>2022.10.29</time>
+											<p class="f16"><b class="f16">반송비</b></p>
+											<p><b class="f20">40,000원</b></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="list-item active">
+						<div class="toggle-head">
+							<div class="list-title-box">
+								<dl>
+									<dd>
+										<div class="tit">
+											<strong>결제 예정내역</strong>
+											<div class="button-box">
+												<a href="" class="btn btn-white ml10 py4 px15 bdr5">변경</a>
+											</div>
+										</div>
+										<div class="cont">
+											<p>현대카드 (0000)</p>
+										</div>
+									</dd>
+								</dl>
+							</div>
+							<button type="button" class="bt" onclick="toggle(this);">더보기</button>
+						</div>
+						<div class="toggle-body">
+							<div class="gray-box">
+								<div class="list-space-box bd">
+									<ul>
+										<li>			 
+											<time>2022/12/02 (예정)</time>
+											<p class="f16"><b class="f16 mr5">대여료</b>2회차</p>
+											<p><b class="f20">560,000원</b></p>
+										</li>
+										<li>			 
+											<time>2022/12/02 (예정)</time>
+											<p class="f16"><b class="f16 mr5">대여료</b>3회차</p>
+											<p><b class="f20">560,000원</b></p>
+										</li>
+										<li>			 
+											<time>2022/12/02 (예정)</time>
+											<p class="f16"><b class="f16 mr5">대여료</b>4회차</p>
+											<p><b class="f20">560,000원</b></p>
+										</li>
+										<li>			 
+											<time>2022/12/02 (예정)</time>
+											<p class="f16"><b class="f16 mr5">대여료</b>5회차</p>
+											<p><b class="f20">560,000원</b></p>
+										</li>
+										<li>			 
+											<time>2022/12/02 (예정)</time>
+											<p class="f16"><b class="f16 mr5">대여료</b>6회차</p>
+											<p><b class="f20">560,000원</b></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="button-box mb40">
+				<div class="col-6 pr10">
+					<a href="" class="btn btn-bd-orange btn-lg">계약서</a>
+				</div>
+				<div class="col-6 pl10">								
+					<a href="" class="btn btn-bd-orange btn-lg">구비서류</a>
+				</div>
+			</div>
+			<div class="toggle-list-box mb14">
+				<ul class="list">
+					<li class="list-item">
+						<div class="list-head">
+							<div>
+								<b>더 뉴 아반떼</b>
+								<sub>12가 0001</sub>
+							</div>
+							<div>
+								<div class="button-box">
+									<span class="btn btn-lightgray w60 px8 py4 bdr4 f12">반납완료</span>
+								</div>
+								<button type="button" onclick="toggle(this);">더보기</button>
+							</div>
+						</div>
+					</li>
+					<li class="list-item active">
+						<div class="list-head">
+							<div>
+								<b>더 뉴 아반떼</b>
+								<sub>12가 0001</sub>
+							</div>
+							<div>
+								<div class="button-box">
+									<span class="btn btn-orange w60 px8 py4 bdr4 f12">이용중</span>
+								</div>
+								<button type="button" onclick="toggle(this);">더보기</button>
+							</div>
+						</div>
+						<div class="list-body">
+							<div class="gray-box bdr0">
+								<div class="list-more-box">
+									<ul>
+										<li>
+											<div class="toggle-head">
+												<div>
+													<b>차량번호</b>
+												</div>
+												<div>
+													<strong>12가0002</strong>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="toggle-head">
+												<div>
+													<b>렌트사</b>
+												</div>
+												<div>
+													<strong>@@렌트사</strong>
+												</div>
+											</div>
+										</li>
+										<li>
+											<div class="toggle-head">
+												<div>
+													<b>차량번호</b>
+												</div>
+												<div>
+													<strong>2022/12/02 ~ 2023/05/06</strong>
+												</div>
+											</div>
+										</li>
+										<li class="active">
+											<div class="toggle-head">
+												<div>
+													<b>배송정보</b>
+												</div>
+												<div class="flex-tj">
+													<div class="button-box">
+														<a href="" class="btn btn-white bdr4 f12 w80 h25">차량인수증</a>
+													</div>
+													<button type="button" onclick="toggle(this);">더보기</button>
+												</div>
+											</div>
+											<div class="toggle-body">
+												<div class="list-title-box2">
+													<dl>
+														<dd>
+															<div class="tit">
+																<strong>배송일시</strong>
+															</div>
+															<div class="cont">
+																<p>2022/12/02 ~ 2023/05/06</p>
+															</div>
+														</dd>
+														<dd>
+															<div class="tit">
+																<strong>배송장소</strong>
+															</div>
+															<div class="cont">
+																<p>서울시 영등포구 00로 00-00, 지상주차장 1층 C구역</p>
+															</div>
+														</dd>
+														<dd>
+															<div class="tit">
+																<strong>인수자명</strong>
+															</div>
+															<div class="cont">
+																<p>홍길동</p>
+															</div>
+														</dd>
+														<dd>
+															<div class="tit">
+																<strong>연락처</strong>
+															</div>
+															<div class="cont">
+																<p>010-0000-0000</p>
+															</div>
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+										<li class="active">
+											<div class="toggle-head">
+												<div>
+													<b>반송정보</b>
+												</div>
+												<div class="flex-tj">
+													<div class="button-box">
+														<a href="" class="btn btn-white bdr4 f12 w80 h25">반납확인서</a>
+													</div>
+													<button type="button" onclick="toggle(this);">더보기</button>
+												</div>
+											</div>
+											<div class="toggle-body">
+												<div class="list-title-box2">
+													<dl>
+														<dd>
+															<div class="tit">
+																<strong>배송일시</strong>
+															</div>
+															<div class="cont">
+																<p>2022/12/02 ~ 2023/05/06</p>
+															</div>
+														</dd>
+														<dd>
+															<div class="tit">
+																<strong>배송장소</strong>
+															</div>
+															<div class="cont">
+																<p>서울시 영등포구 00로 00-00, 지상주차장 1층 C구역</p>
+															</div>
+														</dd>
+														<dd>
+															<div class="tit">
+																<strong>인수자명</strong>
+															</div>
+															<div class="cont">
+																<p>홍길동</p>
+															</div>
+														</dd>
+														<dd>
+															<div class="tit">
+																<strong>연락처</strong>
+															</div>
+															<div class="cont">
+																<p>010-0000-0000</p>
+															</div>
+														</dd>
+													</dl>
+												</div>
+											</div>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="text-box mb32">
+				<div> 
+					<sub>*</sub>
+					<p>배반송 정보 수정은 렌트사로 연락 부탁드립니다.</p>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<!-- 하단 네비게이션바 -->
+	<footer class="m-navigation type01">
+		<div class="navs">
+			<div class="nav-wrap active">
+				<a href="#" class="nav">
+					<img src="../../images/nav1.png" alt="">
+					<h3 class="title">HOME</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav2.png" alt="">
+					<h3 class="title">계약체결</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav3.png" alt="">
+					<h3 class="title">계약내역</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav4.png" alt="">
+					<h3 class="title">이용안내</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav5.png" alt="">
+					<h3 class="title">MY</h3>
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>

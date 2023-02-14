@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[앱] 메인</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/app.css?A=1">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/common2.js"></script>
+</head>
+<body>
+	<!-- 헤더 영역 -->
+	<header>
+		<div class="head-side">
+			<a href="" class="icon icon-back">이전으로</a>
+		</div>
+		<div class="head-title">
+			<h1>차량 대여 계약</h1>
+		</div>
+		<div class="head-side">
+		</div>
+	</header>
+
+	<!-- 내용 영역 -->
+	<section class="pt0">
+		<div class="container">
+			<div class="step-box">
+				<ul>
+					<li class="on">
+						<div>
+							<b>1</b>
+							<p>계약 정보</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<b>2</b>
+							<p>결제 동의</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<b>3</b>
+							<p>서류 등록</p>
+						</div>
+					</li>
+					<li>
+						<div>
+							<b>4</b>
+							<p>계약 완료</p>
+						</div>
+					</li>
+				</ul>
+			</div>
+			<div class="car-box">
+				<div class="car-info">
+					<div class="info-content">
+						<time>2021년식</time>
+						<h2>더 뉴 아반떼</h2>
+						<dl>
+							<dd>현대자동차</dd>
+							<dd>준중형</dd>
+							<dd>휘발유</dd>
+							<dd>폴리화이트</dd>
+							<dd>정원5명</dd>
+						</dl>
+					</div>
+					<div class="info-image">
+						<img src="../../images/app/img_car.png">
+					</div>
+				</div>
+				<div class="car-option">
+					<ul>
+						<li>내비게이션</li>
+						<li>후방카메라</li>
+						<li class="active">통풍시트</li>
+						<li>주행보조</li>
+						<li>스마트키</li>
+						<li>블랙박스</li>
+						<li>썬루프</li>
+						<li class="active">열선시트</li>
+					</ul>
+				</div>
+			</div>
+			<form class="mt16">
+				<div class="line-box mb12">
+					<div class="title-box">
+						<strong>계약 정보</strong>
+					</div>
+					<div class="gray-box mb12">
+						<div class="list-space-box bd">
+							<ul>
+								<li>
+									<p>계약기간</p>
+									<p>22.10.30 ~ 22.12.29</p>
+								</li>
+								<li>
+									<p>대여기간</p>
+									<p>2개월</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="select-box mb12 px15">
+						<label for="" class="gr">고객구분</label>
+						<div class="box">
+							<select>
+								<option>법인사업자</option>
+							</select>
+						</div>
+					</div>
+					<div class="input-box px15">
+						<label class="gr">사업자 정보</label>
+						<div class="box">
+							<p>
+								주식회사 @@전자 (110-00-00000)<br>
+								서비스업 / 전자설비 설치용역<br>
+								서울시 중구 세종대로 110, @@전자<br>
+								대표자 홍길동<br>
+								00-0000-000
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="line-box">
+					<div class="title-box">
+						<strong>보험정보</strong>	
+					</div>
+					<div class="gray-box">
+						<div class="list-space-box">
+							<ul>
+								<li class="mb20">
+									<p>면허 취득 기준</p>
+									<p><b>2년 이상</b></p>
+								</li>
+								<li class="mb20">
+									<p>연령 제한</p>
+									<p><b>만 21세 이상</b></p>
+								</li>
+								<li>
+									<p>보장범위</p>
+									<p>
+										<b>대인 : 무한</b>
+										<small class="mb8">사고 상대방의 인명 피해</small>
+										<b>대물 : 5000만원</b>
+										<small class="mb8">사고 상대방의 물적 피해</small>
+										<b>자손 : 무한</b>
+										<small>운전자 본인의 사고 피해</small>
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="line-box">
+					<div class="title-box">
+						<strong>배송 정보</strong>
+					</div>
+					<div class="select-box px15 mb10">
+						<label for="" class="gr">배송일시</label>
+						<div class="box">
+							<select>
+								<option>2022.10.30 09:00</option>
+							</select>
+						</div>
+					</div>
+					<div class="select-box px15 mb10">
+						<label for="" class="gr">배송장소</label>
+						<div class="box">
+							<select>
+								<option>서울시 중구 세종대로 110, @@전자</option>
+							</select>
+						</div>
+					</div>
+					<div class="select-box px15 mb10">
+						<label for="" class="gr">인수자명</label>
+						<div class="box">
+							<select>
+								<option>홍길동</option>
+							</select>
+						</div>
+					</div>
+					<div class="select-box px15 mb10">
+						<label for="" class="gr">인수자 연락처</label>
+						<div class="box">
+							<select>
+								<option>010 0000 0000</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="line-box bb0 mb46">
+					<div class="title-box">
+						<strong>반송 정보</strong>
+					</div> 
+					<div class="select-box px15 mb10">
+						<label for="" class="gr">배송일시</label>
+						<div class="box">
+							<select>
+								<option>2022.10.30 09:00</option>
+							</select>
+						</div>
+					</div>
+					<div class="select-box px15 mb10 disabled">
+						<label for="" class="gr">배송장소</label>
+						<div class="box">
+							<select disabled>
+								<option>서울시 중구 세종대로 110, @@전자</option>
+							</select>
+						</div>
+					</div>
+					<div class="select-box px15 mb10 disabled">
+						<label for="" class="gr">인수자명</label>
+						<div class="box">
+							<select disabled>
+								<option>홍길동</option>
+							</select>
+						</div>
+					</div>
+					<div class="select-box px15 mb10 disabled">
+						<label for="" class="gr">인수자 연락처</label>
+						<div class="box">
+							<select disabled>
+								<option>010 0000 0000</option>
+							</select>
+						</div>
+					</div>
+				</div>
+				<div class="button-box pb32">
+					<a href="" class="btn btn-active btn-lg">다음</a>
+				</div>
+			<form>
+		</div>
+	</section>
+
+	<!-- 하단 네비게이션바 -->
+	<footer class="m-navigation type01">
+		<div class="navs">
+			<div class="nav-wrap active">
+				<a href="#" class="nav">
+					<img src="../../images/nav1.png" alt="">
+					<h3 class="title">HOME</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav2.png" alt="">
+					<h3 class="title">계약체결</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav3.png" alt="">
+					<h3 class="title">계약내역</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav4.png" alt="">
+					<h3 class="title">이용안내</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav5.png" alt="">
+					<h3 class="title">MY</h3>
+				</a>
+			</div>
+		</div>
+	</footer>
+</body>
+</html>
