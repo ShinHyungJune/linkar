@@ -59,6 +59,32 @@
 .m-input-select.type01 .option.active .checkbox {
     color:#fff; background-color:#F25C35; border-color:transparent;
 }
+.m-input-value.type01 {
+    display: flex; align-items: center;
+}
+.m-input-value.type01 .label {
+    margin-right:12px; padding:4px 12px;
+    font-size:12px; font-weight:500; border-radius:5px;
+    background-color:#F5F5F5; color:#585858;
+}
+.m-input-value.type01 .placeholder {
+    color:#C1C1C1;
+}
+.m-inputs.type01 {
+    width:1008px;
+    padding:16px 0;
+    border:1px solid #e1e1e1; border-radius:5px;
+    background-color:#fff;
+}
+.m-inputs.type01 .m-input-wrap {
+    flex:1;
+    height:46px;
+    border-left:1px solid #e1e1e1;
+}
+.m-inputs.type01 .m-input-wrap:first-of-type {border-left:none;}
+.m-inputs.type01 .m-input-title {
+    font-size:14px; font-weight:600 !important;
+}
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;
@@ -1163,4 +1189,11 @@ input[type="radio"] {display:none;}
 
 input:disabled {
     color:#777 !important;
+}
+
+.area-carReservation-index .section-filter .m-inputs.type01 .m-input-wrap {
+    cursor:pointer;
+}
+.area-carReservation-index .section-filter .m-inputs.type01 .m-input-wrap.active .m-input-title {
+    color:#F25C35;
 }
