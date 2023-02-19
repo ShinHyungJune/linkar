@@ -425,7 +425,7 @@
                     <section class="section-filter">
                         <div class="wrap">
                             <div class="left">
-                                <div class="m-inputs type01">
+                                <div class="m-inputs type03" style="position:relative;">
                                     <div class="m-input-wrap m-script m-input-delivery" data-target=".m-input-delivery">
                                         <h3 class="m-input-title">배송지역</h3>
 
@@ -449,7 +449,7 @@
                                         </div>
                                     </div>
                                     <div class="m-input-wrap m-script m-input-price" data-target=".m-input-price">
-                                        <h3 class="m-input-title">대여/반납일</h3>
+                                        <h3 class="m-input-title">영업수수료 (월)</h3>
 
                                         <div class="m-input-value type01">
                                             <p class="placeholder">-</p>
@@ -462,23 +462,324 @@
                                         <button class="m-btn type01">검색</button>
                                     </div>
 
-                                    <div class="m-input-delivery m-pop type03 m-pop-delivery">
-                                        <h3 class="title">배송지역</h3>
+                                    <!-- 배송지역 팝업 -->
+                                    <div class="m-pop type03 m-input-delivery m-pop-delivery">
+                                        <div class="fragment">
+                                            <h3 class="title">배송지역</h3>
 
-                                        <div class="m-input-checkboxes type02">
+                                            <div class="m-input-checkboxes type02">
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox" checked>
+                                                        <label for="">서울</label>
+                                                    </div>
+                                                </div>
 
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">경기</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">인천</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">대전</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">세종</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">충남</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">충북</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">광주</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">전남</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">전북</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">대구</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">경북</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">부산</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">울산</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">경남</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">강원</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">제주</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-pop-btns">
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn bg-deepGray m-script" data-target=".m-input-delivery">초기화</a>
+                                            </div>
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn bg-primary m-script" data-target=".m-input-delivery">적용</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 대여/반납일 팝업 -->
+                                    <div class="m-pop type03 m-input-duration m-pop-duration">
+                                        <div class="fragment">
+                                            <h3 class="title">대여기간</h3>
+
+                                            <div class="m-input-checkboxes type02">
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox" checked>
+                                                        <label for="">1개월</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">2개월</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">3개월</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">6개월</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">12개월</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">24개월</label>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">30개월</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="fragment">
+                                            <h3 class="title">대여일</h3>
+
+                                            <div class="m-input-dates type01">
+                                                <div class="m-input-text type01">
+                                                    <input type="date">
+                                                </div>
+                                                <span class="deco">~</span>
+                                                <div class="m-input-text type01">
+                                                    <input type="date">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-pop-btns">
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn bg-deepGray m-script" data-target=".m-input-duration">초기화</a>
+                                            </div>
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn bg-primary m-script" data-target=".m-input-duration">적용</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <!-- 영업수수료 팝업 -->
+                                    <div class="m-pop type03 m-input-price m-pop-price">
+                                        <div class="fragment">
+                                            <div class="m-inputs" style="display:flex;">
+                                                <div class="m-input-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">렌트료의 일정비율 (%)</option>
+                                                            <option value="">월 고정 수수료 (원)</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-wrap">
+                                                    <div class="m-input-text type01 with-text">
+                                                        <input type="text" placeholder="100">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-pop-btns">
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn bg-deepGray m-script" data-target=".m-input-duration">초기화</a>
+                                            </div>
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn bg-primary m-script" data-target=".m-input-duration">적용</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="mt-24"></div>
+
+                                <div class="inputs">
+                                    <div class="m-input-wrap">
+                                        <div class="m-input-select type01">
+                                            <select name="" id="">
+                                                <option value="">보험연령</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-input-wrap">
+                                        <div class="m-input-select type01">
+                                            <select name="" id="">
+                                                <option value="">제조사</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-input-wrap">
+                                        <div class="m-input-select type01">
+                                            <select name="" id="">
+                                                <option value="">차종</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-input-wrap">
+                                        <div class="m-input-select type01">
+                                            <select name="" id="">
+                                                <option value="">유종</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-input-wrap">
+                                        <div class="m-input-select type01">
+                                            <select name="" id="">
+                                                <option value="">색상</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-input-wrap">
+                                        <div class="m-input-select type01">
+                                            <select name="" id="">
+                                                <option value="">대여가격</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-input-wrap">
+                                        <div class="m-input-select type01">
+                                            <select name="" id="">
+                                                <option value="">추가운전자 법인, 개인</option>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-btns type01" style="margin-left:4px;">
+                                        <div class="m-btn-wrap">
+                                            <a href="#" class="m-btn type02 bg-deepGray">초기화</a>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="right">
-                                <div class="m-btns type01">
-                                    <div class="m-btn-wrap">
-                                        <a href="#" class="m-btn type02 bg-gray">초기화</a>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </section>
 
@@ -488,61 +789,248 @@
                                 <div class="fragment">
                                     <div class="fragment-top">
                                         <h3 class="title">
-                                            렌트사 내역
-                                            <span class="point">총 4건</span>
+                                            차량예약내역
+                                            <span class="point">총 50 대</span>
                                         </h3>
 
                                         <div class="m-btns type01">
-                                            <div class="m-btn-wrap">
-                                                <a href="#" class="m-btn type02 bg-revert-black m-script-pop" data-target="#pop">삭제</a>
-                                            </div>
-                                            <div class="m-btn-wrap">
-                                                <a href="#" class="m-btn type02 bg-revert-black">엑셀다운로드</a>
+                                            <div class="m-input-select type02">
+                                                <select name="" id="" class="primary">
+                                                    <option value="">렌트료순</option>
+                                                    <option value="">보증료순</option>
+                                                </select>
                                             </div>
                                         </div>
                                     </div>
 
-                                    <div class="m-table-wrap">
-                                        <table class="m-table type01">
-                                            <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
+                                    <div class="m-items type01">
+                                        <div class="m-item">
+                                            <div class="box-img">
+                                                <img src="../../images/car2.png" alt="">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="box-title">
+                                                    <h3 class="title">더 뉴 아반떼</h3>
+
+                                                    <div class="m-tags type02">
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">2021년식</div>
+                                                        </div>
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">만 26세 이상</div>
+                                                        </div>
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">면허취득 2년 이상</div>
+                                                        </div>
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">추가운전자 가능</div>
+                                                        </div>
                                                     </div>
-                                                </th>
-                                                <th>No</th>
-                                                <th>렌트사</th>
-                                                <th>사업자번호</th>
-                                                <th>대표자명</th>
-                                                <th>거래은행</th>
-                                                <th>계좌번호</th>
-                                                <th>예금주명</th>
-                                                <th>수정자</th>
-                                                <th>수정일시</th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
+                                                </div>
+
+                                                <div class="categories">
+                                                    <p class="category">현대자동차</p>
+                                                    <p class="category">준중형</p>
+                                                    <p class="category">휘발유</p>
+                                                    <p class="category">폴리화이트</p>
+                                                    <p class="category">정원5명</p>
+                                                </div>
+
+                                                <div class="m-input-checkboxes type02">
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox" checked>
+                                                            <label for="">내비게이션</label>
+                                                        </div>
                                                     </div>
-                                                </td>
-                                                <td>1</td>
-                                                <td>A렌터카</td>
-                                                <td>000-00-00000</td>
-                                                <td>홍길동</td>
-                                                <td>국민은행</td>
-                                                <td>000000000</td>
-                                                <td>A렌터가</td>
-                                                <td>홍길동(어드민)</td>
-                                                <td>2022-10-15 09:00</td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">후방카메라</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">통풍시트</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">주행보조</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">스마트키</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">블랙박스</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">썬루프</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">열선시트</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="box-infos">
+                                                <div class="box-info">
+                                                    <div class="info">
+                                                        <h3 class="title">보증금</h3>
+                                                        <p class="body">200,000 원</p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3 class="title">예상 배반송료</h3>
+                                                        <p class="body">약 15,000 원</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-info box-result">
+                                                    <div class="info">
+                                                        <h3 class="title">기본렌트료</h3>
+                                                        <p class="body">200,000 원</p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3 class="title">영업수수료 (10%)</h3>
+                                                        <p class="body">약 15,000 원</p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3 class="title">월 렌트료</h3>
+                                                        <p class="body">825,000 원/월</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-item">
+                                            <div class="box-img">
+                                                <img src="../../images/car2.png" alt="">
+                                            </div>
+
+                                            <div class="content">
+                                                <div class="box-title">
+                                                    <h3 class="title">더 뉴 아반떼</h3>
+
+                                                    <div class="m-tags type02">
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">2021년식</div>
+                                                        </div>
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">만 26세 이상</div>
+                                                        </div>
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">면허취득 2년 이상</div>
+                                                        </div>
+                                                        <div class="m-tag-wrap">
+                                                            <div class="m-tag">추가운전자 가능</div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="categories">
+                                                    <p class="category">현대자동차</p>
+                                                    <p class="category">준중형</p>
+                                                    <p class="category">휘발유</p>
+                                                    <p class="category">폴리화이트</p>
+                                                    <p class="category">정원5명</p>
+                                                </div>
+
+                                                <div class="m-input-checkboxes type02">
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox" checked>
+                                                            <label for="">내비게이션</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">후방카메라</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">통풍시트</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">주행보조</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">스마트키</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">블랙박스</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">썬루프</label>
+                                                        </div>
+                                                    </div>
+                                                    <div class="m-input-checkbox-wrap">
+                                                        <div class="m-input-checkbox">
+                                                            <input type="checkbox">
+                                                            <label for="">열선시트</label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                            <div class="box-infos">
+                                                <div class="box-info">
+                                                    <div class="info">
+                                                        <h3 class="title">보증금</h3>
+                                                        <p class="body">200,000 원</p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3 class="title">예상 배반송료</h3>
+                                                        <p class="body">약 15,000 원</p>
+                                                    </div>
+                                                </div>
+
+                                                <div class="box-info box-result">
+                                                    <div class="info">
+                                                        <h3 class="title">기본렌트료</h3>
+                                                        <p class="body">200,000 원</p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3 class="title">영업수수료 (10%)</h3>
+                                                        <p class="body">약 15,000 원</p>
+                                                    </div>
+                                                    <div class="info">
+                                                        <h3 class="title">월 렌트료</h3>
+                                                        <p class="body">825,000 원/월</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -555,8 +1043,16 @@
     </div>
 </div>
 <script>
+    let isActive = false;
+
     $(".m-script").click(function(){
-        $(".m-script").removeClass("active");
+        isActive = $($(this).attr("data-target")).hasClass("active");
+
+        $(".m-script, .m-pop").removeClass("active");
+
+        if(isActive)
+            return $($(this).attr("data-target")).removeClass("active");
+
         $($(this).attr("data-target")).addClass("active");
     })
 </script>
