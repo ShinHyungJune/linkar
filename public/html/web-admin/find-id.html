@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아이디 찾기</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<div id="app">
+    <div class="area-find-id">
+        <div class="wrap-mobile login-box">
+            <div class="login-title pt30 mb48">
+                <h1>LOGO</h1>
+                <p>아이디 찾기</p>
+            </div>
+
+            <!-- 내용 영역 -->
+            <form>
+                <div class="input-box mb16">
+                    <label for="">이름</label>
+                    <div class="box">
+                        <input type="text" placeholder="이름 입력">
+                    </div>
+                </div>
+
+                <div class="input-box input-number-box mb16">
+                    <label for="">주민등록번호 앞7자리</label>
+                    <div class="box">
+                        <div class="front-number">
+                            <input type="text" placeholder="예)850112" maxlength="6">
+                        </div>
+                        <span>-</span>
+                        <div class="back-number">
+                            <input type="text" maxlength="1" placeholder="0">
+                            <sub>2번째 주민번호 가림</sub>
+                            <sub>3번째 주민번호 가림</sub>
+                            <sub>4번째 주민번호 가림</sub>
+                            <sub>5번째 주민번호 가림</sub>
+                            <sub>6번째 주민번호 가림</sub>
+                            <sub>7번째 주민번호 가림</sub>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="select-box mb16">
+                    <label for="">통신사 <span class="star">*</span></label>
+                    <div class="box">
+                        <select>
+                            <option>통신사 선택</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="input-box mb16">
+                    <label for="">휴대폰 번호 <span class="star">*</span></label>
+                    <div class="box">
+                        <input type="text" placeholder="휴대폰 번호 ('-' 제외)">
+                        <a href="" class="active">인증</a>
+                    </div>
+                </div>
+                <div class="input-box mb16">
+                    <label for="">인증번호</label>
+                    <div class="box">
+                        <input type="text" placeholder="인증번호 입력">
+                        <a href="" class="active">확인</a>
+                    </div>
+                </div>
+                <p class="input-error">인증번호가 발송되었습니다. 문자가 오지 않는 경우 스팸여부를 확인해주세요.</p>
+
+                <div class="title-box mb15">
+                    <h2>
+                        <b>약관동의 <span class="star">*</span></b>
+                        <p>원활한 서비스 이용을 위해 필수 항목 동의가 필요합니다.</p>
+                    </h2>
+                </div>
+                <div class="border-box mb32">
+                    <div class="check-box lg">
+                        <div class="check">
+                            <input type="radio" name="checkall" id="checkall">
+                            <label for="checkall">전체동의</label>
+                        </div>
+                    </div>
+                    <div class="agree-list-box bt">
+                        <ul>
+                            <li>
+                                <div>
+                                    <input type="checkbox" name="radio01" id="radio01">
+                                    <label for="radio01"><span>(필수) 서비스 이용 약관</span></label>
+                                </div>
+                                <a href="" class="icon-next">더보기</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" name="radio02" id="radio02">
+                                    <label for="radio02"><span>(필수) 개인정보 수집 이용 약관</span></label>
+                                </div>
+                                <a href="" class="icon-next">더보기</a>
+                            </li>
+                            <li>
+                                <div>
+                                    <input type="checkbox" name="radio03" id="radio03">
+                                    <label for="radio03"><span>(필수) 개인정보 제3자 제공 동의</span></label>
+                                </div>
+                                <a href="" class="icon-next">더보기</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="button-box">
+                    <a href="" class="btn btn-active btn-lg">회원가입</a>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>
