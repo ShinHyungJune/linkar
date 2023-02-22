@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[관리자] 7.1.1.4. 계약 관리_반납확인서</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<div id="app">
+    <div class="dashboard">
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img src="../../images/logo.png" alt="">
+            </a>
+
+            <div class="menus">
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu00.png" alt="">
+                        </div>
+
+                        <div class="m-input-text type02 right">
+                            <input type="text" placeholder="메뉴명">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu01.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            즐겨찾기
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu active">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu02.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            기본정보 관리
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu03.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            사용자 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu04.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            요금제 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu05.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 예약
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu06.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 대여 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu07.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            정산 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu08.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            고객 센터
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu09.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            일반관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <header class="header">
+                <div class="left">
+                    <h3 class="title">인수확인서</h3>
+                </div>
+
+                <div class="right">
+                    <h3 class="title">00영업사 <span class="point">홍길동 님</span></h3>
+
+                    <a href="#" class="btn">마이페이지</a>
+                    <a href="#" class="btn">로그아웃</a>
+                </div>
+            </header>
+
+            <div class="container-inner">
+                <div class="area-index">
+                    <section class="section-body">
+                        <div class="fragments">
+                            <div class="fragment-wrap">
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <div class="left">
+                                            <h3 class="title">차량 정보</h3>
+                                        </div>
+                                        <div class="m-btns type01">
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn type02">인쇄</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <table class="m-table type01">
+                                        <tbody>
+                                        <tr>
+                                            <th>렌트사</th>
+                                            <td>@@렌트사</td>
+                                            <th>영업점</th>
+                                            <td>수도권지점</td>
+                                            <th>차량모델</th>
+                                            <td>더 뉴 아반떼</td>
+                                            <th>차량번호</th>
+                                            <td>12가1234</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="mt-40"></div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <div class="left">
+                                            <h3 class="title">대여자 정보</h3>
+                                        </div>
+                                    </div>
+
+                                    <table class="m-table type01">
+                                        <tbody>
+                                        <tr>
+                                            <th>고객구분</th>
+                                            <td>법인사업자</td>
+                                            <th>대여자명</th>
+                                            <td>홍길동</td>
+                                            <th>연락처</th>
+                                            <td>010-0000-0000</td>
+                                            <th>이메일</th>
+                                            <td>aaa@naver.com</td>
+                                        </tr>
+                                        <tr>
+                                            <th>사업자명</th>
+                                            <td colspan="3">주식회사 @@전자</td>
+                                            <th>사업자번호</th>
+                                            <td>110-00-0000</td>
+                                            <th>대표자명</th>
+                                            <td>홍길동</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="mt-40"></div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <div class="left">
+                                            <h3 class="title">반송정보</h3>
+                                        </div>
+                                    </div>
+
+                                    <table class="m-table type01">
+                                        <tbody>
+                                        <tr>
+                                            <th>반송일시</th>
+                                            <td>2022-00-00 (월) 00:00</td>
+                                            <th>반송장소</th>
+                                            <td colspan="3">서울시 영등포구 00로 00-00, 00빌딩 지상주차장 1층 C구역</td>
+                                        </tr>
+                                        <tr>
+                                            <th>반송비</th>
+                                            <td>25,000원 (18.5km)</td>
+                                            <th>반납자명</th>
+                                            <td>홍길동</td>
+                                            <th>연락처</th>
+                                            <td>010-0000-0000</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="mt-40"></div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <div class="left">
+                                            <h3 class="title">반납결과</h3>
+                                        </div>
+                                    </div>
+
+                                    <table class="m-table type01">
+                                        <tbody>
+                                        <tr>
+                                            <th>반송상태</th>
+                                            <td>반납완료</td>
+                                            <th>기사명</th>
+                                            <td>강길동</td>
+                                            <th>반송일시</th>
+                                            <td>2022-00-00 (월) 09:00</td>
+                                        </tr>
+                                        <tr>
+                                            <th>연료량</th>
+                                            <td colspan="3">3.5 / 8칸</td>
+                                            <th>주행거리</th>
+                                            <td>17,000 km</td>
+                                        </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                                <div class="mt-40"></div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <div class="left">
+                                            <h3 class="title">차량상태정보</h3>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-circles type01">
+                                        <div class="m-circle-wrap">
+                                            <div class="m-circle">
+                                                <div class="img-wrap">
+                                                    <img src="../../images/sample1.png" alt="">
+                                                </div>
+
+                                                <h3 class="title">차량 전면</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-circle-wrap">
+                                            <div class="m-circle">
+                                                <div class="img-wrap">
+                                                    <img src="../../images/sample2.png" alt="">
+                                                </div>
+
+                                                <h3 class="title">운전석 측/전면</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-circle-wrap">
+                                            <div class="m-circle">
+                                                <span class="alert">차량파손</span>
+
+                                                <div class="img-wrap">
+                                                    <img src="../../images/sample3.png" alt="">
+                                                </div>
+
+                                                <h3 class="title">차량 측/후면</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-circle-wrap">
+                                            <div class="m-circle">
+                                                <div class="img-wrap">
+                                                    <img src="../../images/sample4.png" alt="">
+                                                </div>
+
+                                                <h3 class="title">차량 후면</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-circle-wrap">
+                                            <div class="m-circle">
+                                                <div class="img-wrap">
+                                                    <img src="../../images/sample5.png" alt="">
+                                                </div>
+
+                                                <h3 class="title">조수석 측/후면</h3>
+                                            </div>
+                                        </div>
+
+                                        <div class="m-circle-wrap">
+                                            <div class="m-circle">
+                                                <div class="img-wrap">
+                                                    <img src="../../images/sample6.png" alt="">
+                                                </div>
+
+                                                <h3 class="title">조수석 측/전면</h3>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="m-box-sign type01">
+                                    <p class="date">2022-00-00 00:00</p>
+
+                                    <div class="signs">
+                                        <div class="sign">
+                                            <h3 class="title">기사명</h3>
+                                            <p class="name">강길동</p>
+                                            <p class="sign">서명</p>
+                                        </div>
+
+                                        <div class="sign">
+                                            <h3 class="title">반납자명</h3>
+                                            <p class="name">홍길동</p>
+                                            <p class="sign">서명</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+
+</script>
+</body>
+</html>
