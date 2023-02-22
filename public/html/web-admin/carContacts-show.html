@@ -410,8 +410,7 @@
         <div class="container">
             <header class="header">
                 <div class="left">
-                    <h3 class="title">어드민 관리</h3>
-                    <a href="#" class="btn">어드민 등록</a>
+                    <h3 class="title">게약 상세</h3>
                 </div>
 
                 <div class="right">
@@ -426,45 +425,97 @@
 
                     <!-- 팝업 노출/미노출 여부 -> active 클래스 -->
 
-                    <!-- input 들어간 팝업 -->
-                    <div class="m-pop type01 active" id="pop0">
+                    <!-- 차량 검색 팝업 -->
+                    <div class="m-pop type02" id="pop0">
                         <div class="m-pop-inner">
                             <h3 class="title">정산정보 변경</h3>
 
+                            <div class="m-inputs type02">
+                                <div class="m-input-wrap">
+                                    <div class="m-input-select type01">
+                                        <select name="" id="">
+                                            <option value="">렌트사 전체</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="m-input-wrap">
+                                    <div class="m-input-text type01">
+                                        <input type="text" placeholder="차량모델 검색">
+                                    </div>
+                                </div>
+
+                                <div class="m-input-wrap">
+                                    <div class="m-input-select type01">
+                                        <select name="" id="">
+                                            <option value="">예약가능여부 전체</option>
+                                        </select>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="mt-8"></div>
+
+                            <div class="m-input-withBtn type01">
+                                <div class="m-input-text m-input type01">
+                                    <input type="text" placeholder="차량번호 검색">
+                                </div>
+
+                                <button class="m-input-btn m-btn type02">조회</button>
+                            </div>
+
                             <div class="body">
-                                <table class="m-table type02">
+                                <table class="m-table type01">
+                                    <thead>
+                                    <tr>
+                                        <th>
+                                            <div class="m-input-checkbox type02">
+                                                <input type="checkbox">
+                                                <label for=""></label>
+                                            </div>
+                                        </th>
+                                        <th>No</th>
+                                        <th>렌트사</th>
+                                        <th>영업점</th>
+                                        <th>차량번호</th>
+                                        <th>차량모델</th>
+                                        <th>색상</th>
+                                        <th>연식</th>
+                                        <th>예약여부</th>
+                                    </tr>
+                                    </thead>
                                     <tbody>
                                     <tr>
-                                        <th>
-                                            <div class="m-input-checkbox type03">
-                                                <input type="checkbox">
-                                                <label for="">
-                                                    정산상태
-                                                </label>
-                                            </div>
-                                        </th>
                                         <td>
-                                            <div class="m-input-select type01">
-                                                <select name="" id="">
-                                                    <option value="">대기</option>
-                                                </select>
+                                            <div class="m-input-checkbox type02">
+                                                <input type="checkbox">
+                                                <label for=""></label>
                                             </div>
                                         </td>
+                                        <td>1</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                     <tr>
-                                        <th>
-                                            <div class="m-input-checkbox type03">
-                                                <input type="checkbox">
-                                                <label for="">
-                                                    정산(예정)일
-                                                </label>
-                                            </div>
-                                        </th>
                                         <td>
-                                            <div class="m-input-text type01">
-                                                <input type="date">
+                                            <div class="m-input-checkbox type02">
+                                                <input type="checkbox">
+                                                <label for=""></label>
                                             </div>
                                         </td>
+                                        <td>2</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
                                     </tr>
                                     </tbody>
                                 </table>
@@ -482,99 +533,285 @@
                         </div>
                     </div>
 
-                    <!-- 팝업예시 -->
-                    <div class="m-pop type01" id="pop1">
+                    <!-- 차량 상세 정보 팝업 -->
+                    <div class="m-pop type02" id="pop1">
                         <div class="m-pop-inner">
-                            <h3 class="title">선택한 요금제를 복사하여<br/>신규 요금제를 등록하시겠어요?</h3>
+                            <h3 class="title">차량 상세 정보</h3>
+
+                            <div class="body">
+                                <table class="m-table type02">
+                                    <tbody>
+                                    <tr>
+                                        <th>차량번호</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="12가1234" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>차량모델</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="The All New 아반떼" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>제조사</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="현대자동차" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>차종</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="준중형" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>색상</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="팬텀 블랙" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>연식</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="2023" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>등록년월</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="2022-10" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>연료</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="가솔린" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>차량정원</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="5" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>공인연비</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="10 Km/L" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>배기량</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="1,800 cc" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>면허구분</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="2종 오토" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>옵션</th>
+                                        <td>
+                                            <div class="m-input-textarea type01">
+                                                <textarea name="" id="" readonly>내비게이션, 스마트키, 썬루프</textarea>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
 
                             <div class="m-btns type01">
                                 <div class="m-btn-wrap">
-                                    <button class="m-btn type01 m-script-pop" data-target="#pop1">확인</button>
-                                </div>
-
-                                <div class="m-btn-wrap">
-                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop1">취소</button>
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop1">닫기</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 테이블 팝업 -->
-                    <div class="m-pop type02" id="pop3">
+                    <!-- 차량 상세 정보 팝업 -->
+                    <div class="m-pop type01" id="pop2">
                         <div class="m-pop-inner">
-                            <h3 class="title">어드민 안내문수신자 관리</h3>
+                            <h3 class="title">대여계약 URL</h3>
+
+                            <div class="mt-24"></div>
 
                             <div class="body">
-                                <div class="m-top type01">
-                                    <h3 class="m-top-title">
-                                        계좌이체 내역
-                                        <span class="sub">총 4건</span>
-                                    </h3>
-
-                                    <div class="m-top-btns">
-                                        <div class="m-btn-wrap">
-                                            <a href="#" class="m-btn type02 bg-revert-black">추가</a>
-                                        </div>
-                                        <div class="m-btn-wrap">
-                                            <a href="#" class="m-btn type02 bg-revert-black">삭제</a>
-                                        </div>
+                                <div class="m-input-withBtn type01">
+                                    <div class="m-input-text type01">
+                                        <input type="text" placeholder="https://naver.com">
                                     </div>
+                                    <button class="m-input-btn m-btn type01">URL 복사</button>
                                 </div>
+                            </div>
 
-                                <div class="mt-8"></div>
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop2">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
+                    <!-- 계약연장 팝업 팝업 -->
+                    <div class="m-pop type02" id="pop3">
+                        <div class="m-pop-inner">
+                            <h3 class="title">대여계약 URL</h3>
+
+                            <div class="mt-24"></div>
+
+                            <div class="body">
+                                <table class="m-table type02">
+                                    <tbody>
+                                    <tr>
+                                        <th>대여기간</th>
+                                        <td>
+                                            <div class="m-input-checkboxes type04">
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox" checked>
+                                                        <label for="">1개월</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">2개월</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">3개월</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">6개월</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">12개월</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">24개월</label>
+                                                    </div>
+                                                </div>
+                                                <div class="m-input-checkbox-wrap">
+                                                    <div class="m-input-checkbox">
+                                                        <input type="checkbox">
+                                                        <label for="">36개월</label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>계약기간</th>
+                                        <td class="align-left">
+                                            <div class="m-input-text type01">
+                                                <input type="text" value="2022-10-30(일) ~ 2022-11-28(목)" readonly>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>유의사항</th>
+                                        <td>
+                                            <p class="m-comment type01 align-left">
+                                                - 고객이 모바일에서 연장계약 체결 완료 후 계약연장이 완료됩니다.
+                                            </p>
+                                            <p class="m-comment type01 align-left">
+                                                - 연장계약 체결이 변경 당일까지 완료되지 않을 경우, 계약변경이 취소됩니다.
+                                            </p>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop3">확인</button>
+                                </div>
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop3">취소</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 계약서 팝업 -->
+                    <div class="m-pop type02" id="pop4">
+                        <div class="m-pop-inner">
+                            <h3 class="title">계약서</h3>
+
+                            <div class="body">
                                 <div class="m-table-wrap type03">
                                     <table class="m-table type01">
                                         <thead>
                                         <tr>
-                                            <th>
-                                                <div class="m-input-checkbox type02">
-                                                    <input type="checkbox">
-                                                    <label for=""></label>
-                                                </div>
-                                            </th>
                                             <th>No</th>
-                                            <th>성함</th>
-                                            <th>연락처</th>
-                                            <th>ID(이메일)</th>
+                                            <th>작성시점</th>
+                                            <th>계약서명</th>
+                                            <th>작성자</th>
+                                            <th>작성일시</th>
+                                            <th>상세보기</th>
                                         </tr>
                                         </thead>
                                         <tbody>
                                         <tr>
-                                            <td>
-                                                <div class="m-input-checkbox type02">
-                                                    <input type="checkbox">
-                                                    <label for=""></label>
-                                                </div>
-                                            </td>
                                             <td>1</td>
+                                            <td>대여계약</td>
+                                            <td>자동차대여계약서</td>
                                             <td>홍길동</td>
-                                            <td>010-0000-0000</td>
-                                            <td>aaa@naver.com</td>
+                                            <td>2022-10-20 21:00</td>
+                                            <td>
+                                                <button type="button" class="m-btn type02 bg-revert-black">상세보기</button>
+                                            </td>
                                         </tr>
                                         <tr>
-                                            <td>
-                                                <div class="m-input-checkbox type02">
-                                                    <input type="checkbox">
-                                                    <label for=""></label>
-                                                </div>
-                                            </td>
                                             <td>2</td>
+                                            <td>대여계약</td>
+                                            <td>자동차대여계약서</td>
                                             <td>홍길동</td>
-                                            <td>010-0000-0000</td>
-                                            <td>aaa@naver.com</td>
-                                        </tr>
-                                        <tr>
+                                            <td>2022-10-20 21:00</td>
                                             <td>
-                                                <div class="m-input-checkbox type02">
-                                                    <input type="checkbox">
-                                                    <label for=""></label>
-                                                </div>
+                                                <button type="button" class="m-btn type02 bg-revert-black">상세보기</button>
                                             </td>
-                                            <td>3</td>
-                                            <td>홍길동</td>
-                                            <td>010-0000-0000</td>
-                                            <td>aaa@naver.com</td>
                                         </tr>
                                         </tbody>
                                     </table>
@@ -583,251 +820,196 @@
 
                             <div class="m-btns type01">
                                 <div class="m-btn-wrap">
-                                    <button class="m-btn type01 m-script-pop" data-target="#pop3">확인</button>
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop4">확인</button>
                                 </div>
 
                                 <div class="m-btn-wrap">
-                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop3">취소</button>
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop4">취소</button>
                                 </div>
                             </div>
                         </div>
                     </div>
 
-                    <!-- 좌우테이블 지역 좌측 -> 우측 이동 팝업 -->
-                    <div class="m-pop type02" id="pop2">
+                    <!-- 추가결제 팝업 -->
+                    <div class="m-pop type02" id="pop5">
                         <div class="m-pop-inner">
-                            <h3 class="title">탁송요금제 지역</h3>
+                            <h3 class="title">추가결제</h3>
 
-                            <div class="m-table-move">
-                                <div class="m-table-inner">
-                                    <h3 class="m-table-title">지역리스트</h3>
-
-                                    <div class="m-table-wrap">
-                                        <table class="m-table type01">
-                                            <colgroup>
-                                                <col style="width:20%">
-                                                <col style="width:80%">
-                                            </colgroup>
-                                            <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    지역
-                                                </th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <button class="m-btn type03 m-script-pop" data-target=".region1">
-                                                            <i class="xi-plus inactive"></i>
-                                                            <i class="xi-minus active"></i>
-                                                        </button>
-                                                        <span class="text">서울시</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region1">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">강남구</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region1">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">강동구</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region1">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">강북구</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region1">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">강서구</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <button class="m-btn type03 m-script-pop" data-target=".region2">
-                                                            <i class="xi-plus inactive"></i>
-                                                            <i class="xi-minus active"></i>
-                                                        </button>
-                                                        <span class="text">강원도</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region2">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">춘천시</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region2">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">강릉시</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region2">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">태백</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
-
-                                <div class="btns">
-                                    <button class="m-btn type03">
-                                        <i class="xi-angle-right"></i>
-                                    </button>
-                                    <button class="m-btn type03">
-                                        <i class="xi-angle-left"></i>
-                                    </button>
-                                </div>
-
-                                <div class="m-table-inner">
-                                    <h3 class="m-table-title">지역 선택</h3>
-
-                                    <div class="m-table-wrap">
-                                        <table class="m-table type01">
-                                            <colgroup>
-                                                <col style="width:30%">
-                                                <col style="width:70%">
-                                            </colgroup>
-                                            <thead>
-                                            <tr>
-                                                <th>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </th>
-                                                <th>
-                                                    지역
-                                                </th>
-                                            </tr>
-                                            </thead>
-                                            <tbody>
-                                            <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <button class="m-btn type03 m-script-pop" data-target=".region3">
-                                                            <i class="xi-plus inactive"></i>
-                                                            <i class="xi-minus active"></i>
-                                                        </button>
-                                                        <span class="text">인천시</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr class="region region3">
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="content type01">
-                                                        <span class="text">은평구</span>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                </div>
+                            <div class="body">
+                                <table class="m-table type02">
+                                    <tbody>
+                                    <tr>
+                                        <th>결제구분</th>
+                                        <td>
+                                            <div class="m-input-select type01">
+                                                <select name="" id="">
+                                                    <option value="">대여결제</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>결제수단</th>
+                                        <td>
+                                            <div class="m-input-select type01">
+                                                <select name="" id="">
+                                                    <option value="">카드결제_KB기업카드 (0001)</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>결제항목</th>
+                                        <td>
+                                            <div class="m-input-select type01">
+                                                <select name="" id="">
+                                                    <option value="">기본대여요금</option>
+                                                </select>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>결제액</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
                             </div>
 
                             <div class="m-btns type01">
                                 <div class="m-btn-wrap">
-                                    <button class="m-btn type01 m-script-pop" data-target="#pop2">확인</button>
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop5">확인</button>
                                 </div>
-
                                 <div class="m-btn-wrap">
-                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop2">취소</button>
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop5">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 결제수단상세1 팝업 -->
+                    <div class="m-pop type02" id="pop6">
+                        <div class="m-pop-inner">
+                            <h3 class="title">결제수단 상세</h3>
+
+                            <div class="body">
+                                <table class="m-table type02">
+                                    <tbody>
+                                    <tr>
+                                        <th>카드유형</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드사</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>카드유형</th>
+                                        <td>
+                                            <div class="m-input-phone type01">
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                                <span class="deco">-</span>
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                                <span class="deco">-</span>
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                                <span class="deco">-</span>
+                                                <div class="m-input-text type01">
+                                                    <input type="text">
+                                                </div>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>유효기간</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>생년월일</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop6">확인</button>
+                                </div>
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop6">닫기</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 결제수단상세2 팝업 -->
+                    <div class="m-pop type02" id="pop7">
+                        <div class="m-pop-inner">
+                            <h3 class="title">결제수단 상세</h3>
+
+                            <div class="body">
+                                <table class="m-table type02">
+                                    <tbody>
+                                    <tr>
+                                        <th>거래은행</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>계좌번호</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>예금주명</th>
+                                        <td>
+                                            <div class="m-input-text type01">
+                                                <input type="text">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="m-btns type01">
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop" data-target="#pop5">확인</button>
+                                </div>
+                                <div class="m-btn-wrap">
+                                    <button class="m-btn type01 m-script-pop bg-gray" data-target="#pop5">닫기</button>
                                 </div>
                             </div>
                         </div>
@@ -839,15 +1021,75 @@
                                 <div class="fragment">
                                     <div class="fragment-top">
                                         <h3 class="title">
-                                            기본 정보
+                                            차량 정보
                                         </h3>
 
                                         <div class="m-btns type01">
                                             <div class="m-btn-wrap">
-                                                <a href="#" class="m-btn type02 bg-revert-black">요금 복사</a>
+                                                <a href="#" class="m-btn type02 bg-revert-black">차량 교체</a>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-table-wrap">
+                                        <table class="m-table type02">
+                                            <tbody>
+                                            <tr>
+                                                <th>렌트사</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>영업점</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>차량모델</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>차량번호</th>
+                                                <td>
+                                                    <div class="m-input-withBtn type01">
+                                                        <div class="m-input m-input-text type01">
+                                                            <input type="text" placeholder="">
+                                                        </div>
+
+                                                        <button class="m-input-btn m-btn type01">상세정보</button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <h3 class="title" style="white-space: nowrap; margin-right:10px;">
+                                            계약 정보
+                                        </h3>
+
+                                        <div class="m-btns type01" style="flex-wrap:nowrap;">
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn type02 bg-revert-black" style="min-width:90px;">대여계약 URL</a>
                                             </div>
                                             <div class="m-btn-wrap">
-                                                <a href="#" class="m-btn type02 bg-revert-black">요금 붙여넣기</a>
+                                                <a href="#" class="m-btn type02 bg-revert-black" style="min-width:90px;">예약취소</a>
+                                            </div>
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn type02 bg-revert-black" style="min-width:90px;">계약연장</a>
                                             </div>
                                         </div>
 
@@ -857,27 +1099,7 @@
                                         <table class="m-table type02">
                                             <tbody>
                                             <tr>
-                                                <th>라디오</th>
-                                                <td>
-                                                    <div class="m-input-radios type01">
-                                                        <div class="m-input-radio-wrap">
-                                                            <div class="m-input-radio type02">
-                                                                <input type="radio" checked>
-                                                                <label for="">사용</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="m-input-radio-wrap">
-                                                            <div class="m-input-radio type02">
-                                                                <input type="radio">
-                                                                <label for="">미사용</label>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>텍스트</th>
+                                                <th>계약번호</th>
                                                 <td>
                                                     <div class="m-input-text type01">
                                                         <input type="text" placeholder="">
@@ -885,101 +1107,54 @@
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>
-                                                    셀렉트
-
-                                                    <div class="m-input-explain type01">
-                                                        <i class="xi-help"></i>
-
-                                                        <div class="m-input-explain-body">
-                                                            테스트 내용입니다.
-                                                        </div>
-                                                    </div>
-                                                </th>
+                                                <th>계약상태</th>
                                                 <td>
-                                                    <div class="m-input-select type01">
-                                                        <select name="" id="">
-                                                            <option value="">선택</option>
-                                                        </select>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>파일</th>
+                                                <th>예약일시</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="datetime-local" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>계약체결일</th>
                                                 <td>
                                                     <div class="m-input-withBtn type01">
-                                                        <div class="m-input-file type01">
-                                                            <input type="file" id="test" placeholder="">
-                                                            <span class="replace">파일을 첨부해주세요</span>
+                                                        <div class="m-input-text type01">
+                                                            <input type="text" placeholder="">
                                                         </div>
 
-                                                        <label for="test" class="m-input-btn m-btn type01">파일첨부</label>
+                                                        <button class="m-input-btn m-btn type01">계약서</button>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>주소</th>
+                                                <th>계약시작일</th>
                                                 <td>
-                                                    <div class="m-input-withBtn type01">
-                                                        <div class="m-input m-input-text type01">
-                                                            <input type="text" placeholder="" disabled>
-                                                        </div>
-
-                                                        <button class="m-input-btn m-btn type01">검색</button>
+                                                    <div class="m-input-text type01">
+                                                        <input type="datetime-local" placeholder="">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>전화번호</th>
+                                                <th>계약종료일</th>
                                                 <td>
-                                                    <div class="m-input-phone type01">
-                                                        <div class="m-input-text type01">
-                                                            <input type="text">
-                                                        </div>
-                                                        <span class="deco">-</span>
-                                                        <div class="m-input-text type01">
-                                                            <input type="text">
-                                                        </div>
-                                                        <span class="deco">-</span>
-                                                        <div class="m-input-text type01">
-                                                            <input type="text">
-                                                        </div>
+                                                    <div class="m-input-text type01">
+                                                        <input type="datetime-local" placeholder="">
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th>기간</th>
+                                                <th>대여기간</th>
                                                 <td>
-                                                    <div class="m-input-dates type01">
-                                                        <div class="m-input-text type01">
-                                                            <input type="date">
-                                                        </div>
-                                                        <span class="deco">~</span>
-                                                        <div class="m-input-text type01">
-                                                            <input type="date">
-                                                        </div>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <th>숫자</th>
-                                                <td>
-                                                    <div class="m-input-phone type01">
-                                                        <div class="m-input-text type01 with-deco">
-                                                            <input type="number" placeholder="" class="align-right">
-                                                            <div class="m-input-text-deco">%</div>
-                                                        </div>
-                                                        <span class="deco"></span>
-                                                        <div class="m-input-text type01 with-deco">
-                                                            <input type="number" placeholder="" class="align-right red">
-                                                            <div class="m-input-text-deco red">-</div>
-                                                        </div>
-                                                    </div>
-
-                                                    <div class="mt-8"></div>
-
-                                                    <div class="m-input-text type01 with-deco">
-                                                        <input type="number" placeholder="" class="align-right">
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -991,24 +1166,146 @@
                                 <div class="fragment">
                                     <div class="fragment-top">
                                         <h3 class="title">
-                                            테이블 정보
+                                            대여자 정보
                                         </h3>
 
-                                        <div class="right">
-                                            <div class="m-btns type02">
-                                                <div class="m-btn-wrap">
-                                                    <button class="m-btn type03">
-                                                        <i class="xi-plus"></i>
-                                                    </button>
-                                                </div>
-
-                                                <div class="m-btn-wrap">
-                                                    <button class="m-btn type03">
-                                                        <i class="xi-minus"></i>
-                                                    </button>
-                                                </div>
+                                        <div class="m-btns type01">
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn type02 bg-revert-black">회원 선택</a>
                                             </div>
                                         </div>
+
+                                    </div>
+
+                                    <div class="m-table-wrap">
+                                        <table class="m-table type02">
+                                            <tbody>
+                                            <tr>
+                                                <th>
+                                                    고객구분
+                                                </th>
+                                                <td>
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">개인</option>
+                                                        </select>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>대여자명</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>연락처</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>이메일</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <h3 class="title">
+                                            영업담당자
+                                        </h3>
+
+                                        <div class="m-btns type01">
+                                            <div class="m-btn-wrap">
+                                                <a href="#" class="m-btn type02 bg-revert-black">영업담당자 선택</a>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="m-table-wrap">
+                                        <table class="m-table type02">
+                                            <tbody>
+                                            <tr>
+                                                <th>성함</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>연락처</th>
+                                                <td>
+                                                    <div class="m-input-text type01">
+                                                        <input type="text" placeholder="">
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th>
+                                                    영업수수료
+                                                </th>
+                                                <td>
+                                                    <div class="m-inputs" style="display:flex;">
+                                                        <div class="m-input-radio type02" style="margin-right:8px;">
+                                                            <input type="radio">
+                                                            <label for="">미부과</label>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-8"></div>
+
+                                                    <div class="m-inputs" style="display:flex; align-items: center">
+                                                        <div class="m-input-radio type02" style="margin-right:8px;">
+                                                            <input type="radio">
+                                                            <label for="">렌트료의 일정비율</label>
+                                                        </div>
+
+                                                        <div class="m-input-text type01 with-text">
+                                                            <input type="text" placeholder="1 ~ 100" style="width:150px;">
+                                                            <span class="text">%</span>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="mt-8"></div>
+
+                                                    <div class="m-inputs" style="display:flex; align-items: center">
+                                                        <div class="m-input-radio type02" style="margin-right:8px;">
+                                                            <input type="radio">
+                                                            <label for="">월 고정금액</label>
+                                                        </div>
+
+                                                        <div class="m-input-text type01 with-text">
+                                                            <input type="text" placeholder="금액 입력" style="width:150px;">
+                                                            <span class="text">원</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <h3 class="title">
+                                            구비서류
+                                        </h3>
                                     </div>
 
                                     <div class="m-table-wrap type01">
@@ -1016,191 +1313,96 @@
                                             <thead>
                                             <tr>
                                                 <th>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </th>
-                                                <th>
                                                     No
                                                 </th>
-                                                <th>사용여부</th>
-                                                <th>적용상태</th>
-                                                <th>렌트사</th>
-                                                <th>요금제구분</th>
-                                                <th>요금제명</th>
-                                                <th>적용시작일</th>
-                                                <th>적용종료일</th>
-                                                <th>미입력요금</th>
-                                                <th>수정자</th>
-                                                <th>수정일시</th>
+                                                <th>구분</th>
+                                                <th>서류명</th>
+                                                <th>첨부파일</th>
+                                                <th>등록자</th>
+                                                <th>등록일시</th>
 
-                                                <th class="point">1개월</th>
-                                                <th class="point">2개월</th>
-                                                <th class="point">3개월</th>
-                                                <th class="point">4개월</th>
-                                                <th class="point">5개월</th>
                                             </tr>
                                             </thead>
                                             <tbody>
                                             <tr>
+                                                <td>1</td>
+                                                <td>필수</td>
                                                 <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
+                                                    <div class="m-input-select type02">
+                                                        <select name="" id="">
+                                                            <option value="" selected disabled>@@서류</option>
+                                                        </select>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    1
-                                                </td>
-                                                <td>사용</td>
-                                                <td>대기</td>
-                                                <td>A렌트사</td>
-                                                <td>기본</td>
-                                                <td>2023 기본요금</td>
-                                                <td>2023.01.01</td>
-                                                <td>2023.01.01</td>
-                                                <td>Y</td>
-                                                <td>홍길동(A렌트사)</td>
-                                                <td>2022.12.01 19:30</td>
+                                                    <div class="m-tags type01">
+                                                        <button class="m-tag">
+                                                            @@서류.png
 
-                                                <td class="point align-right">
-                                                    포인트
+                                                            <i class="xi-close"></i>
+                                                        </button>
+                                                    </div>
                                                 </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
+                                                <td>홍길동 (고객)</td>
+                                                <td>2022-00-00 00:00</td>
                                             </tr>
                                             <tr>
+                                                <td>2</td>
+                                                <td>필수</td>
                                                 <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
+                                                    <div class="m-input-select type02">
+                                                        <select name="" id="">
+                                                            <option value="" selected disabled>@@서류</option>
+                                                        </select>
                                                     </div>
                                                 </td>
                                                 <td>
-                                                    2
+                                                    <div class="m-tags type01">
+                                                        <input type="file" id="test">
+                                                        <label for="test" class="m-btn type02 bg-revert-black">파일첨부</label>
+                                                    </div>
                                                 </td>
-                                                <td>사용</td>
-                                                <td>적용중</td>
-                                                <td>A렌트사</td>
-                                                <td>특수</td>
-                                                <td>2023 기본요금</td>
-                                                <td>2023.01.01</td>
-                                                <td>2023.01.01</td>
-                                                <td>Y</td>
-                                                <td>홍길동(A렌트사)</td>
-                                                <td>2022.12.01 19:30</td>
-
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
+                                                <td>홍길동 (고객)</td>
+                                                <td>2022-00-00 00:00</td>
                                             </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+
+                                <div class="fragment">
+                                    <div class="fragment-top">
+                                        <h3 class="title">
+                                            계약 변경 이력
+                                        </h3>
+                                    </div>
+
+                                    <div class="m-table-wrap type01">
+                                        <table class="m-table type01">
+                                            <thead>
                                             <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    3
-                                                </td>
-                                                <td>미사용</td>
-                                                <td>종료</td>
-                                                <td>A렌트사</td>
-                                                <td>특수</td>
-                                                <td>2023 기본요금</td>
-                                                <td>2023.01.01</td>
-                                                <td>2023.01.01</td>
-                                                <td>N</td>
-                                                <td>홍길동(A렌트사)</td>
-                                                <td>2022.12.01 19:30</td>
-
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
-                                                <td class="point align-right">
-                                                    포인트
-                                                </td>
+                                                <th>
+                                                    No
+                                                </th>
+                                                <th>차량모델</th>
+                                                <th>차량번호</th>
+                                                <th>계약시작일</th>
+                                                <th>계약종료일</th>
+                                                <th>변경자</th>
+                                                <th>변경일시</th>
                                             </tr>
+                                            </thead>
+                                            <tbody>
                                             <tr>
-                                                <td>
-                                                    <div class="m-input-checkbox type02">
-                                                        <input type="checkbox">
-                                                        <label for=""></label>
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    2
-                                                </td>
-                                                <td>미사용</td>
-                                                <td>미사용</td>
-                                                <td>A렌트사</td>
-                                                <td>특수</td>
-                                                <td>2023 기본요금</td>
-                                                <td>2023.01.01</td>
-                                                <td>2023.01.01</td>
-                                                <td>Y</td>
-                                                <td>홍길동(A렌트사)</td>
-                                                <td>2022.12.01 19:30</td>
-
-                                                <td class="point align-right">
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력">
-                                                    </div>
-                                                </td>
-                                                <td class="point">
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
-                                                <td>
-                                                    <div class="m-input-text type01 type-middle">
-                                                        <input type="text" placeholder="요금 입력" class="align-right">
-                                                    </div>
-                                                </td>
+                                                <td>1</td>
+                                                <td>더 뉴 아반떼</td>
+                                                <td>12가1234</td>
+                                                <td>2022-10-30 (일)</td>
+                                                <td>2022-12-29 (목)</td>
+                                                <td>홍길동 (영업담당자)</td>
+                                                <td>2022-10-20 00:00</td>
                                             </tr>
+
                                             </tbody>
                                         </table>
                                     </div>
@@ -1211,7 +1413,10 @@
                                 <div class="fragment-wrap-top">
                                     <div class="m-tabs type01">
                                         <button class="m-tab active m-script-tab" data-target="#m-tabs-contents">
-                                            탭메뉴1
+                                            결제
+                                        </button>
+                                        <button class="m-tab m-script-tab" data-target="#m-tabs-contents">
+                                            배반송
                                         </button>
                                         <button class="m-tab m-script-tab" data-target="#m-tabs-contents">
                                             변경이력
@@ -1220,10 +1425,7 @@
 
                                     <div class="m-btns type01">
                                         <div class="m-btn-wrap">
-                                            <a href="#" class="m-btn type02 bg-black">초기화</a>
-                                        </div>
-                                        <div class="m-btn-wrap">
-                                            <a href="#" class="m-btn type02 bg-primary">조회</a>
+                                            <a href="#" class="m-btn type02 bg-primary">저장</a>
                                         </div>
                                     </div>
                                 </div>
@@ -1234,164 +1436,55 @@
                                             <div class="fragment-top">
                                                 <div class="left">
                                                     <h3 class="title">
-                                                        좌우분할
+                                                        결제 내역
                                                     </h3>
-
-                                                    <div class="m-input-withBtn type01">
-                                                        <div class="m-input-text type01">
-                                                            <input type="text" placeholder="검색어를 입력해주세요.">
-                                                        </div>
-
-                                                        <button class="m-input-btn m-btn type01">검색</button>
-                                                    </div>
                                                 </div>
-
                                                 <div class="right">
                                                     <div class="m-btns type01">
                                                         <div class="m-btn-wrap">
-                                                            <a href="#" class="m-btn type02 bg-revert-black">요금 복사</a>
+                                                            <a href="#" class="m-btn type02 bg-revert-black">재결제</a>
                                                         </div>
                                                         <div class="m-btn-wrap">
-                                                            <a href="#" class="m-btn type02 bg-revert-black">요금 붙여넣기</a>
+                                                            <a href="#" class="m-btn type02 bg-revert-black">결제취소</a>
+                                                        </div>
+                                                        <div class="m-btn-wrap">
+                                                            <a href="#" class="m-btn type02 bg-black">추가결제</a>
                                                         </div>
                                                     </div>
                                                 </div>
-                                            </div>
-
-                                            <div class="divides">
-                                                <div class="divide-wrap">
-                                                    <div class="divide">
-                                                        <table class="m-table type02">
-                                                            <tbody>
-                                                            <tr>
-                                                                <th>
-                                                                    대여기간
-
-                                                                    <div class="m-btns type02" style="justify-content:flex-start; margin-top:8px">
-                                                                        <div class="m-btn-wrap">
-                                                                            <button class="m-btn type03">
-                                                                                <i class="xi-plus"></i>
-                                                                            </button>
-                                                                        </div>
-
-                                                                        <div class="m-btn-wrap">
-                                                                            <button class="m-btn type03">
-                                                                                <i class="xi-minus"></i>
-                                                                            </button>
-                                                                        </div>
-                                                                    </div>
-                                                                </th>
-                                                                <td>
-                                                                    <table class="m-table type01">
-                                                                        <thead>
-                                                                        <th>
-                                                                            <div class="m-input-checkbox type02">
-                                                                                <input type="checkbox">
-                                                                                <label for=""></label>
-                                                                            </div>
-                                                                        </th>
-                                                                        <th>대여기간(개월)</th>
-                                                                        </thead>
-                                                                        <tbody>
-                                                                        <tr>
-                                                                            <td>
-                                                                                <div class="m-input-checkbox type02">
-                                                                                    <input type="checkbox">
-                                                                                    <label for=""></label>
-                                                                                </div>
-                                                                            </td>
-                                                                            <td>
-                                                                                <div class="m-input-text type01 type-small">
-                                                                                    <input type="text" placeholder="" style="text-align: center">
-                                                                                </div>
-                                                                            </td>
-                                                                        </tr>
-                                                                        </tbody>
-                                                                    </table>
-
-                                                                    <p class="m-comment type01">* 1개월 = 30일</p>
-                                                                </td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                                <div class="divide-wrap">
-                                                    <div class="divide">
-                                                        <table class="m-table type02">
-                                                            <tbody>
-                                                            <tr>
-                                                                <th>
-                                                                    텍스트
-                                                                    <p class="sub">서브제목</p>
-                                                                </th>
-                                                                <td>
-                                                                    <div class="m-input-text type01 with-text">
-                                                                        <input type="text" placeholder="" style="text-align: right;"><span class="text">영업일 이후</span>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            <tr>
-                                                                <th>여러줄</th>
-                                                                <td>
-                                                                    <div class="m-input-text type01 with-text">
-                                                                        <span class="text">카드결제</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
-                                                                    </div>
-
-                                                                    <div class="mt-8"></div>
-
-                                                                    <div class="m-input-text type01 with-text">
-                                                                        <span class="text">계좌이체</span><input type="text" placeholder="" style="text-align: right;"><span class="text">일</span>
-                                                                    </div>
-                                                                </td>
-                                                            </tr>
-                                                            </tbody>
-                                                        </table>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-
-                                        <div class="fragment">
-                                            <div class="fragment-top">
-                                                <h3 class="title">
-                                                    좌우통합
-                                                </h3>
                                             </div>
 
                                             <div class="m-table-wrap type01">
                                                 <table class="m-table type01">
                                                     <thead>
                                                     <tr>
-                                                        <th>
+                                                        <th rowspan="2">
                                                             <div class="m-input-checkbox type02">
                                                                 <input type="checkbox">
                                                                 <label for=""></label>
                                                             </div>
                                                         </th>
-                                                        <th>
+                                                        <th rowspan="2">
                                                             No
                                                         </th>
-                                                        <th>사용여부</th>
-                                                        <th>적용상태</th>
-                                                        <th>렌트사</th>
-                                                        <th>요금제구분</th>
-                                                        <th>요금제명</th>
-                                                        <th>적용시작일</th>
-                                                        <th>적용종료일</th>
-                                                        <th>미입력요금</th>
-                                                        <th>수정자</th>
-                                                        <th>수정일시</th>
-
-                                                        <th class="point">1개월</th>
-                                                        <th class="point">2개월</th>
-                                                        <th class="point">3개월</th>
-                                                        <th class="point">4개월</th>
-                                                        <th class="point">5개월</th>
+                                                        <th rowspan="2">결제구분</th>
+                                                        <th rowspan="2">결제정보</th>
+                                                        <th rowspan="2">승인일시</th>
+                                                        <th rowspan="2">결제상태</th>
+                                                        <th rowspan="2">총 결제액</th>
+                                                        <th colspan="6">결제항목</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>기본대여요금</th>
+                                                        <th>영업수수료</th>
+                                                        <th>배송비</th>
+                                                        <th>반송비</th>
+                                                        <th>패널티</th>
+                                                        <th>기타</th>
                                                     </tr>
                                                     </thead>
                                                     <tbody>
-                                                    <tr>
+                                                    <tr class="disabled">
                                                         <td>
                                                             <div class="m-input-checkbox type02">
                                                                 <input type="checkbox">
@@ -1401,32 +1494,21 @@
                                                         <td>
                                                             1
                                                         </td>
-                                                        <td>사용</td>
-                                                        <td>대기</td>
-                                                        <td>A렌트사</td>
-                                                        <td>기본</td>
-                                                        <td>2023 기본요금</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>Y</td>
-                                                        <td>홍길동(A렌트사)</td>
-                                                        <td>2022.12.01 19:30</td>
+                                                        <td>대여결제</td>
+                                                        <td>
+                                                            카드결제
 
-                                                        <td class="point align-right">
-                                                            포인트
+                                                            <button class="m-btn type02 bg-revert-black mt-8" style="min-width:60px;">상세</button>
                                                         </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
+                                                        <td>2022-10-20 18:00</td>
+                                                        <td>결제취소</td>
+                                                        <td>600,000</td>
+                                                        <td>500,000</td>
+                                                        <td>30,000</td>
+                                                        <td>20,000</td>
+                                                        <td>20,000</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
                                                     </tr>
                                                     <tr>
                                                         <td>
@@ -1438,34 +1520,23 @@
                                                         <td>
                                                             2
                                                         </td>
-                                                        <td>사용</td>
-                                                        <td>적용중</td>
-                                                        <td>A렌트사</td>
-                                                        <td>특수</td>
-                                                        <td>2023 기본요금</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>Y</td>
-                                                        <td>홍길동(A렌트사)</td>
-                                                        <td>2022.12.01 19:30</td>
+                                                        <td>대여결제</td>
+                                                        <td>
+                                                            카드결제
 
-                                                        <td class="point align-right">
-                                                            포인트
+                                                            <button class="m-btn type02 bg-revert-black mt-8" style="min-width:60px;">상세</button>
                                                         </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
+                                                        <td>2022-10-20 18:00</td>
+                                                        <td>결제취소</td>
+                                                        <td>600,000</td>
+                                                        <td>500,000</td>
+                                                        <td>30,000</td>
+                                                        <td>20,000</td>
+                                                        <td>20,000</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
                                                     </tr>
-                                                    <tr>
+                                                    <tr class="alert">
                                                         <td>
                                                             <div class="m-input-checkbox type02">
                                                                 <input type="checkbox">
@@ -1475,79 +1546,21 @@
                                                         <td>
                                                             3
                                                         </td>
-                                                        <td>미사용</td>
-                                                        <td>종료</td>
-                                                        <td>A렌트사</td>
-                                                        <td>특수</td>
-                                                        <td>2023 기본요금</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>N</td>
-                                                        <td>홍길동(A렌트사)</td>
-                                                        <td>2022.12.01 19:30</td>
+                                                        <td>반납결제</td>
+                                                        <td>
+                                                            카드결제
 
-                                                        <td class="point align-right">
-                                                            포인트
+                                                            <button class="m-btn type02 bg-revert-black mt-8" style="min-width:60px;">상세</button>
                                                         </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                        <td class="point align-right">
-                                                            포인트
-                                                        </td>
-                                                    </tr>
-                                                    <tr>
-                                                        <td>
-                                                            <div class="m-input-checkbox type02">
-                                                                <input type="checkbox">
-                                                                <label for=""></label>
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            2
-                                                        </td>
-                                                        <td>미사용</td>
-                                                        <td>미사용</td>
-                                                        <td>A렌트사</td>
-                                                        <td>특수</td>
-                                                        <td>2023 기본요금</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>2023.01.01</td>
-                                                        <td>Y</td>
-                                                        <td>홍길동(A렌트사)</td>
-                                                        <td>2022.12.01 19:30</td>
-
-                                                        <td class="point align-right">
-                                                            <div class="m-input-text type01 type-middle">
-                                                                <input type="text" placeholder="요금 입력">
-                                                            </div>
-                                                        </td>
-                                                        <td class="point">
-                                                            <div class="m-input-text type01 type-middle">
-                                                                <input type="text" placeholder="요금 입력" class="align-right">
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="m-input-text type01 type-middle">
-                                                                <input type="text" placeholder="요금 입력" class="align-right">
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="m-input-text type01 type-middle">
-                                                                <input type="text" placeholder="요금 입력" class="align-right">
-                                                            </div>
-                                                        </td>
-                                                        <td>
-                                                            <div class="m-input-text type01 type-middle">
-                                                                <input type="text" placeholder="요금 입력" class="align-right">
-                                                            </div>
-                                                        </td>
+                                                        <td>2022-10-20 18:00</td>
+                                                        <td class="red">결제실패</td>
+                                                        <td class="red">600,000</td>
+                                                        <td>500,000</td>
+                                                        <td>30,000</td>
+                                                        <td>20,000</td>
+                                                        <td>20,000</td>
+                                                        <td>0</td>
+                                                        <td>0</td>
                                                     </tr>
                                                     </tbody>
                                                 </table>
@@ -1559,35 +1572,192 @@
                                             <div class="fragment-top">
                                                 <div class="left">
                                                     <h3 class="title">
-                                                        라디오 + 텍스트에어리어
+                                                        보증금
                                                     </h3>
+                                                </div>
+                                            </div>
 
-                                                    <div class="m-input-radios type01">
-                                                        <div class="m-input-radio-wrap">
-                                                            <div class="m-input-radio type02">
-                                                                <input type="radio">
-                                                                <label for="">사용</label>
-                                                            </div>
-                                                        </div>
-
-                                                        <div class="m-input-radio-wrap">
-                                                            <div class="m-input-radio type02">
-                                                                <input type="radio">
-                                                                <label for="">미사용</label>
-                                                            </div>
-                                                        </div>
+                                            <div class="divides">
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>
+                                                                    결제정보
+                                                                </th>
+                                                                <td>
+                                                                    <div class="m-input-withBtn type01">
+                                                                        <div class="m-input-text type01">
+                                                                            <input type="text">
+                                                                        </div>
+                                                                        <button class="m-input-btn m-btn type01">상세정보</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    결제일시
+                                                                </th>
+                                                                <td>
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="datetime-local">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    결제액
+                                                                </th>
+                                                                <td>
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="text">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
                                                     </div>
                                                 </div>
-
+                                                <div class="divide-wrap">
+                                                    <div class="divide">
+                                                        <table class="m-table type02">
+                                                            <tbody>
+                                                            <tr>
+                                                                <th>
+                                                                    환불정보
+                                                                </th>
+                                                                <td>
+                                                                    <div class="m-input-withBtn type01">
+                                                                        <div class="m-input-text type01">
+                                                                            <input type="text">
+                                                                        </div>
+                                                                        <button class="m-input-btn m-btn type01">상세정보</button>
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    환불일시
+                                                                </th>
+                                                                <td>
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="datetime-local">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            <tr>
+                                                                <th>
+                                                                    환불액
+                                                                </th>
+                                                                <td>
+                                                                    <div class="m-input-text type01">
+                                                                        <input type="text">
+                                                                    </div>
+                                                                </td>
+                                                            </tr>
+                                                            </tbody>
+                                                        </table>
+                                                    </div>
+                                                </div>
                                             </div>
-
-                                            <div class="m-input-textarea type01">
-                                                <textarea name="" id=""></textarea>
-                                            </div>
-
                                         </div>
 
-                                        <p class="m-comment type01">* 신규 계약의 경우 차량 예약 시점에 차량에 맵핑된 요금제로 계약 진행</p>
+                                        <div class="fragment">
+                                            <div class="fragment-top">
+                                                <div class="left">
+                                                    <h3 class="title">
+                                                        결제 예정 정보
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="m-table-wrap type01">
+                                                <table class="m-table type01">
+                                                    <thead>
+                                                    <tr>
+                                                        <th rowspan="2">
+                                                            No
+                                                        </th>
+                                                        <th rowspan="2">결제예정일시</th>
+                                                        <th rowspan="2">총 결제예정액</th>
+                                                        <th colspan="3">결제상세</th>
+                                                    </tr>
+                                                    <tr>
+                                                        <th>기본대여요금</th>
+                                                        <th>영업수수료</th>
+                                                        <th>기타</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>
+                                                            1
+                                                        </td>
+                                                        <td>2022-11-25</td>
+                                                        <td>560,000</td>
+                                                        <td>560,000</td>
+                                                        <td>10,000</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>
+                                                            2
+                                                        </td>
+                                                        <td>2022-11-25</td>
+                                                        <td>560,000</td>
+                                                        <td>560,000</td>
+                                                        <td>10,000</td>
+                                                        <td>-</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="m-tabs-content">
+                                        <div class="fragment">
+                                            <div class="fragment-top">
+                                                <div class="left">
+                                                    <h3 class="title">
+                                                        변경이력
+                                                    </h3>
+                                                </div>
+                                            </div>
+
+                                            <div class="m-table-wrap type01">
+                                                <table class="m-table type01 th-border">
+                                                    <thead>
+                                                    <tr>
+                                                        <th>No</th>
+                                                        <th>변경항목</th>
+                                                        <th>변경 전</th>
+                                                        <th>변경 후</th>
+                                                        <th>변경자</th>
+                                                        <th>변경일시</th>
+                                                    </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                    <tr>
+                                                        <td>1</td>
+                                                        <td>신규등록</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>황길동 (어드민)</td>
+                                                        <td>2022-00-00 00:00</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2</td>
+                                                        <td>연락처</td>
+                                                        <td>-</td>
+                                                        <td>-</td>
+                                                        <td>황길동 (어드민)</td>
+                                                        <td>2022-00-00 00:00</td>
+                                                    </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
                                     </div>
                                     <div class="m-tabs-content">
                                         <div class="fragment">
