@@ -4436,7 +4436,7 @@ input[type=number] {
 }
 .m-input-text.type01 input {
     width:100%; height:32px;
-    padding:0 16px;
+    padding:0 10px;
     font-size:14px;
     border:1px solid #E4E4E4; border-radius:3px;
 }
@@ -4520,6 +4520,10 @@ label {
 }
 .m-items.type01 .m-item .box-img {
     display:flex; align-items: center; justify-content: center; flex-wrap:wrap;
+    margin-right:40px;
+}
+.m-items.type01 .m-item .box-img img {
+    max-width:220px;
 }
 
 .m-items.type01 .m-item .box-title {
@@ -4574,19 +4578,22 @@ label {
 }
 .m-items.type01 .m-item .box-info .info {
     display:flex; align-items: center; justify-content: space-between;
-    margin-top:10px;
+    margin-top:16px;
 }
 .m-items.type01 .m-item .box-info .info:first-of-type {
     margin-top:0;
 }
 .m-items.type01 .m-item .box-info .info .title {
-    font-weight:500;
+    font-weight:500; font-size:14px; color:#999;
 }
 .m-items.type01 .m-item .box-info .info .title .subtitle {
-    margin-left:4px;font-size:14px;
+    margin-left:4px;font-size:14px;  color:#999;
 }
 .m-items.type01 .m-item .box-info .info .body {
-    font-weight:bold;
+    font-weight:bold; font-size:14px;  color:#999;
+}
+.m-items.type01 .m-item .box-info .info.point * {
+    color:#000;
 }
 .m-items.type01 .m-item .box-result {
     background-color:#F5F5F5;
@@ -4689,10 +4696,10 @@ input[type='file'] {display:none;}
     width:100%;
 }
 .m-btns.type02 {
-    display:flex; margin:-4px;
+    display:flex; margin:-2px;
 }
 .m-btns.type02 .m-btn-wrap {
-    padding:4px;
+    padding:2px;
 }
 .m-btn.type01 {
     display:flex; align-items: center; justify-content: center;
@@ -4920,7 +4927,7 @@ input[type='file'] {display:none;}
 .dashboard .sidebar {
     display:flex; align-items: center; flex:0 0 auto;
     width:240px; max-width:77px; height:100vh; padding:0 24px;
-    position:relative;
+    position:fixed; z-index:11;
     background-color:#fff; box-shadow:0px 8px 16px rgba(0,0,0,0.08);
     transition:all .3s;
     overflow:hidden;
@@ -4947,7 +4954,11 @@ input[type='file'] {display:none;}
     height:48px;
     position:relative;
 }
+.dashboard .sidebar > .menus > .menu-wrap > .menu input {
+    width:100%;
+}
 .dashboard .sidebar > .menus > .menu-wrap > .menu .right {
+    width:calc(100% - 40px);
     margin-left:16px;
     position:absolute; top:50%; left:24px; transform:translateY(-50%);
     font-size:15px; font-weight:600;
@@ -4997,12 +5008,16 @@ input[type='file'] {display:none;}
 
 }
 .dashboard .container {
-    flex:auto;
+    flex:auto; padding-top:63px; padding-left:77px;
 }
 .dashboard .container .header {
     display:flex; align-items: center; justify-content: space-between;
+    width:calc(100% - 77px);
+    position:fixed; top:0; right:0;
     padding:20px 30px;
     border-bottom:1px solid #e1e1e1;
+    background-color:#fff;
+    z-index:2;
 }
 .dashboard .container .header .left {
     display:flex; align-items: center;
@@ -5131,8 +5146,9 @@ input[type='file'] {display:none;}
 }
 .m-input-checkboxes.type02 .m-input-checkbox label {
     display:flex; align-items: center; justify-content: center;
-    padding:14px 10px;
+    padding:8px 10px;
     border-radius:8px; border:1px solid #E4E4E4; color:#C1C1C1;
+    font-size:14px;
 }
 .m-input-checkboxes.type02 .m-input-checkbox input:checked + label {
     background-color:#FDE8E2; color:#F25C35; font-weight:500; border-color:transparent;
@@ -5475,7 +5491,7 @@ input[type="radio"] {display:none;}
 
 .m-tabs.type01 .m-tab {
     padding:0 16px; position:relative;
-    font-size:20px; font-weight:bold; color:#ccc;
+    font-size:18px; font-weight:bold; color:#ccc;
 }
 .m-tabs.type01 .m-tab.active {
     color:#000;
@@ -5515,7 +5531,7 @@ input[type="radio"] {display:none;}
 }
 .area-create .section-body .fragments {
     display:flex;
-    min-height:calc(100vh - 63px);
+    min-height:calc(100vh - 70px);
 }
 .area-create .section-body .fragments .m-btns.type02 {
     justify-content: center;
@@ -5530,7 +5546,7 @@ input[type="radio"] {display:none;}
 }
 .area-create .section-body .fragment-side + .fragment-main .m-table-wrap.type01 {
     max-width:calc(100vw - 617px);
-    height:350px;
+    /*height:350px;*/
     overflow-y:auto;
     border:1px solid #e1e1e1;
 }
@@ -5549,8 +5565,11 @@ input[type="radio"] {display:none;}
     font-size:16px; font-weight:bold;
 }
 .area-create .section-body .fragment-wrap {
+    max-height:calc(100vh - 70px);
     padding:32px 30px;
+    overflow-y:auto;
 }
+
 .area-create .section-body .fragment {
     padding-bottom:30px; margin-bottom:30px;
     border-bottom:1px solid #e1e1e1;
@@ -5935,8 +5954,12 @@ input:disabled {
     height:100vh;
     background:url("../images/base-front.png") no-repeat; background-size:cover; background-position:center;
 }
+.area-login .input-box {
+    border:none;
+}
 .area-login .comment {
-    text-align: center; color:#585858;
+    font-size:14px;
+    text-align: center; color:#999;
 }
 .login-title {
     text-align: center;
@@ -6154,7 +6177,7 @@ input:disabled {
 }
 .input-box + .input-comment {
     margin-top:-8px; margin-bottom:16px; padding-left:20px;
-    font-size:14px; word-break: keep-all;
+    font-size:14px; word-break: keep-all; color:#F25C35;
 }
 .input-box + .input-error {
     margin-top:-8px; margin-bottom:16px; padding-left:20px;
@@ -6193,9 +6216,11 @@ input:disabled {
 }
 
 .input-box .box a {
+    position:absolute; right:24px; top:50%;
+    transform:translateY(-50%);
     font-size: 14px;
     color: #000;
-    font-weight: 700;
+    font-weight: 700; color:#ccc;
 }
 
 .input-box .box a.active {
@@ -6500,14 +6525,14 @@ input:disabled {
 }
 
 .button-check-box .check label {
-    height: 56px;
+    height: 40px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     border: 1px solid #E4E4E4;
     border-radius: 8px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: 600;
     color: #C1C1C1;
 }
@@ -6577,18 +6602,15 @@ input:disabled {
 }
 
 .button-box .btn-kakao {
+    display:flex; align-items: center;
     background: #fee500;
     position: relative;
     color: #000;
 }
 
 .button-box .btn-kakao:before {
-    position: absolute;
-    left: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 21.5px;
-    height: 20px;
+    width: 21.5px; height: 20px; margin-right:12px;
+    position:relative; top:1px;
     background: url('../images/app/icon_kakao.png') no-repeat center / cover;
     content: "";
 }
@@ -8056,4 +8078,11 @@ input:disabled {
     border: 1px solid #F25C35;
 }
 
+input {border:none; outline: none}
 
+/* 스크롤바 */
+* {scroll-behavior: smooth; -webkit-overflow-scrolling: touch;}
+*::-webkit-scrollbar { width: 10px; height:10px; cursor:pointer;}
+*::-webkit-scrollbar-track { background-color:#eee; opacity:0.5; } /* 바 배경 색상 */
+*::-webkit-scrollbar-thumb { background: #ccc; box-shadow:0px 3px 6px rgba(0,0,0,0.16); border-radius:10px; } /* 위치 바 색상 */
+*::-webkit-scrollbar-button { display: none; }
