@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[관리자] 2.1.1. 홈_대시보드_어드민</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/admin.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/admin.js"></script>
+</head>
+<style>
+
+</style>
+<body>
+<div id="app">
+    <div class="dashboard">
+        <div class="sidebar">
+            <a href="#" class="logo">
+                <img src="../../images/logo.png" alt="">
+            </a>
+
+            <div class="menus">
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu00.png" alt="">
+                        </div>
+
+                        <div class="m-input-text type02 right">
+                            <input type="text" placeholder="메뉴명">
+                        </div>
+                    </a>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu01.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            즐겨찾기
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu active">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu02.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            기본정보 관리
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu03.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            사용자 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu04.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            요금제 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu05.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 예약
+                        </div>
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu06.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            차량 대여 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu07.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            정산 관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu08.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            고객 센터
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="menu-wrap">
+                    <a href="#" class="menu">
+                        <div class="img-wrap">
+                            <img src="../../images/admin-menu09.png" alt="">
+                        </div>
+
+                        <div class="text right">
+                            일반관리
+                        </div>
+
+                    </a>
+
+                    <div class="menus">
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴1</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="menu-wrap">
+                            <a href="#" class="menu">서브메뉴2</a>
+
+                            <div class="btns">
+                                <a href="#" class="link">
+                                    <img src="../../images/external-black.png" alt="">
+                                </a>
+                                <a href="#" class="link">
+                                    <img src="../../images/star-black.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <header class="header">
+                <div class="left">
+                    <h3 class="title">Home</h3>
+                </div>
+
+                <div class="right">
+                    <h3 class="title">00영업사 <span class="point">홍길동 님</span></h3>
+
+                    <a href="#" class="btn">마이페이지</a>
+                    <a href="#" class="btn">로그아웃</a>
+                </div>
+            </header>
+
+            <div class="container-inner">
+                <!-- 팝업 노출/미노출 여부 -> active 클래스 -->
+
+                <div class="area-dashboard area-dashboard-admin">
+                    <section class="section-body">
+                        <div class="boxes">
+                            <div class="box-wrap box-wrap01" style="flex:2;">
+                                <div class="box">
+                                    <div class="box-title">
+                                        <a href="#" class="title">계약체결 현황 <i class="xi-angle-right"></i></a>
+                                    </div>
+
+                                    <div class="contents">
+                                        <div class="content">
+                                            <h3 class="title">
+                                                계약대기
+                                                <span class="subtitle">고객 미맵핑</span>
+                                            </h3>
+
+                                            <p class="body primary">30</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3 class="title">
+                                                계약대기
+                                                <span class="subtitle">고객 맵핑</span>
+                                            </h3>
+
+                                            <p class="body primary">30</p>
+                                        </div>
+
+                                        <div class="content">
+                                            <h3 class="title">
+                                                가계약
+                                                <span class="subtitle">-</span>
+                                            </h3>
+
+                                            <p class="body primary">30</p>
+                                        </div>
+                                    </div>
+
+                                    <div class="links">
+                                        <a href="" class="link">
+                                            <div class="left">
+                                                <p class="date">02/02 00:00</p>
+                                                <h3 class="title">예약 자동취소 예정 <span class="sub">(카드결제)</span></h3>
+                                            </div>
+                                            <div class="right primary">2</div>
+                                        </a>
+
+                                        <a href="" class="link">
+                                            <div class="left">
+                                                <h3 class="title">예약 자동취소 예정</h3>
+                                            </div>
+                                            <div class="right primary">5</div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-wrap box-wrap02" style="flex:4;">
+                                <div class="box">
+                                    <div class="box-title">
+                                        <div class="left">
+                                            <a href="#" class="title">차량 투입 현황 <i class="xi-angle-right"></i></a>
+                                        </div>
+                                        <div class="right">
+                                            <div class="m-inputs type01">
+                                                <div class="m-input-select-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">전체 렌트사</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-select-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">전체 영업점</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-table-wrap">
+                                        <table class="m-table type01">
+                                            <thead>
+                                            <tr>
+                                                <th>영업점</th>
+                                                <th>차량모델명</th>
+                                                <th>총 투입대수</th>
+                                                <th>예약가능</th>
+                                                <th>예약불가능</th>
+                                            </tr>
+                                            </thead>
+                                            <tbody>
+                                            <tr class="bg-lightPrimary">
+                                                <td class="primary">총 계</td>
+                                                <td class="primary"></td>
+                                                <td class="primary">15</td>
+                                                <td class="primary">13</td>
+                                                <td class="primary">2</td>
+                                            </tr>
+                                            <tr>
+                                                <th>수도권지점</th>
+                                                <th></th>
+                                                <th>10</th>
+                                                <th>8</th>
+                                                <th>2</th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>The all-new K3</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>K5 DL3</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>아반떼 CN7</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>The new 아반떼</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>-</td>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>KS DL3</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>-</td>
+                                            </tr>
+
+                                            <tr>
+                                                <th>부산지점</th>
+                                                <th></th>
+                                                <th>5</th>
+                                                <th>5</th>
+                                                <th>-</th>
+                                            </tr>
+                                            <tr>
+                                                <th></th>
+                                                <td>The all-new K3</td>
+                                                <td>3</td>
+                                                <td>3</td>
+                                                <td>-</td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="boxes">
+                            <div class="box-wrap box-wrap03" style="flex:3;">
+                                <div class="box">
+                                    <div class="box-title">
+                                        <div class="left">
+                                            <a href="#" class="title">계약 현황 <i class="xi-angle-right"></i></a>
+                                        </div>
+
+                                        <div class="right">
+                                            <div class="m-inputs type01">
+                                                <div class="m-input-select-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">2023년</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-select-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">전체 렌트사</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-select-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">전체 영업점</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="box-canvas">
+                                        <canvas id="lineChart" style="margin-top:auto;"></canvas>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="box-wrap box-wrap03" style="flex:3;">
+                                <div class="box">
+                                    <div class="box-title">
+                                        <div class="left">
+                                            <a href="#" class="title">정산 현황 <i class="xi-angle-right"></i></a>
+                                        </div>
+
+                                        <div class="right">
+                                            <div class="m-inputs type01">
+                                                <div class="m-input-select-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">2023년 01월</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+
+                                                <div class="m-input-select-wrap">
+                                                    <div class="m-input-select type01">
+                                                        <select name="" id="">
+                                                            <option value="">전체 렌트사</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="m-table-wrap">
+                                        <table class="m-table type01">
+                                            <tr>
+                                                <th style="width:90px" rowspan="4" class="bg-deepGray white">
+                                                    영업
+                                                    <br/>담당자
+                                                </th>
+                                                <th>정산상태</th>
+                                                <th>건수</th>
+                                                <th>고객 총 결제액</th>
+                                                <th>카드수수료</th>
+                                                <th>플랫폼수수료</th>
+                                                <th>영업담당자 정산액</th>
+                                            </tr>
+                                            <tr>
+                                                <td>대기</td>
+                                                <td>1</td>
+                                                <td>10,000</td>
+                                                <td class="primary">-225</td>
+                                                <td class="primary">-767</td>
+                                                <td>9,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>완료</td>
+                                                <td>3</td>
+                                                <td>10,000</td>
+                                                <td class="primary">-225</td>
+                                                <td class="primary">-767</td>
+                                                <td>9,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th>계</th>
+                                                <th>4</th>
+                                                <th>10,000</th>
+                                                <th class="primary">-225</th>
+                                                <th class="primary">-767</th>
+                                                <th>9,000</th>
+                                            </tr>
+                                        </table>
+
+                                        <div class="mt-16"></div>
+
+                                        <table class="m-table type01">
+                                            <tr>
+                                                <th style="width:90px" rowspan="4" class="bg-deepGray white">
+                                                    렌트사
+                                                </th>
+                                                <th>정산상태</th>
+                                                <th>건수</th>
+                                                <th>고객 총 결제액</th>
+                                                <th>카드수수료</th>
+                                                <th>플랫폼수수료</th>
+                                                <th>렌트사 정산액</th>
+                                            </tr>
+                                            <tr>
+                                                <td>대기</td>
+                                                <td>1</td>
+                                                <td>10,000</td>
+                                                <td class="primary">-225</td>
+                                                <td class="primary">-767</td>
+                                                <td>9,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>완료</td>
+                                                <td>3</td>
+                                                <td>10,000</td>
+                                                <td class="primary">-225</td>
+                                                <td class="primary">-767</td>
+                                                <td>9,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th>계</th>
+                                                <th>4</th>
+                                                <th>10,000</th>
+                                                <th class="primary">-225</th>
+                                                <th class="primary">-767</th>
+                                                <th>9,000</th>
+                                            </tr>
+                                        </table>
+
+                                        <div class="mt-16"></div>
+
+                                        <table class="m-table type01">
+                                            <tr>
+                                                <th style="width:90px" rowspan="4" class="bg-deepGray white">
+                                                    계좌이체
+                                                </th>
+                                                <th>정산상태</th>
+                                                <th>건수</th>
+                                                <th>고객 총 결제액</th>
+                                                <th>카드수수료</th>
+                                                <th>플랫폼수수료</th>
+                                                <th>영업담당자 정산액</th>
+                                            </tr>
+                                            <tr>
+                                                <td>대기</td>
+                                                <td>1</td>
+                                                <td>10,000</td>
+                                                <td class="primary">-225</td>
+                                                <td class="primary">-767</td>
+                                                <td>9,000</td>
+                                            </tr>
+                                            <tr>
+                                                <td>완료</td>
+                                                <td>3</td>
+                                                <td>10,000</td>
+                                                <td class="primary">-225</td>
+                                                <td class="primary">-767</td>
+                                                <td>9,000</td>
+                                            </tr>
+                                            <tr>
+                                                <th>계</th>
+                                                <th>4</th>
+                                                <th>10,000</th>
+                                                <th class="primary">-225</th>
+                                                <th class="primary">-767</th>
+                                                <th>9,000</th>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+<script>
+    // 라인 차트
+    var ctx = document.getElementById('lineChart').getContext('2d');
+
+    var lineChart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'bar',
+
+        // The data for our dataset
+        data: {
+            labels: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+            datasets: [{
+                label: '계약현황',
+                backgroundColor: 'rgb(243,92,53, 0.5)', // 차트 배경색
+                borderColor: 'rgb(243,92,53)', // 라인 색깔
+                fill : "start", // "end" 차트 위쪽, 아래쪽 중 어느쪽에 색깔을 채울지
+                borderWidth: 3, // 라인 넓이(px)
+                lineTension: .1, // 각 꼭지점 근처 라인의 border-radius(뾰족하게 할지, 둥글게 할지)
+                pointBackgroundColor: "blue", // 꼭지점 색깔, ["black", "pink", "white"] 이런식으로 각 꼭지점마다의 색깔 각각 지정 가능, 다른 속성들도 마찬기지로 array로 각각 제어가능
+                pointBorderColor: "yellow", // 꼭지점 border 색깔,
+                // pointBorderWidth: 2,
+                // pointHoverBackgroundColor: "black", // 꼭지점 hover 컬
+                // pointHoverBorderColor: "black", // 꼭지점 hover 컬렁
+                hitRadius: 25, // 꼭지점에 마우스 갖다대면 라벨이 뜸 이렇게 갖다 댔을 때 뜨는 영역 크기, 이미지 포인터를 넣으면 꼭지점 자체 크기가 커지기 때문에 이 부분도 늘려줘야됨
+                pointBorderWidth: 2, // 꼭지점 border 넓이
+                // showLine: false // false시 라인 없이 꼭지점만 나옴
+                // spanGaps: false // false 시 데이터 나열할 때 혹시 빈 데이터가 있거든 자연스럽게 채워줌(공백으로 표시 안됨)
+                // steppedLine: true // true 시 라인이 자연스럽게 곡선으로 연결되는게 아니라 계단식으로 딱딱 끊어져서 연결됨
+                data: [
+                    10, 20, 8, 5,
+                    10, 11, 8, 5,
+                    10, 20, 12, 13,
+                    10, 14, 6, 5,
+                ],
+            }]
+        },
+
+        // Configuration options go here
+        options: {
+            layout: {
+                padding: {  // 간격
+                    left:50,
+                    right:50,
+                    top:0,
+                    bottom:0
+                }
+            },
+            scales: {
+                xAxes: [{
+                    gridLines: {
+                        display:false
+                    }
+                }],
+                yAxes: [{
+                    gridLines: {
+                        display:false
+                    }
+                }]
+            }
+        }
+    });
+</script>
+</body>
+</html>
