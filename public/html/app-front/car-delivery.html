@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[앱] 메인</title>
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../../css/base.css">
+    <link rel="stylesheet" type="text/css" href="../../css/app.css?A=1">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+    <script src="../../js/jquery.js"></script>
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/common.js"></script>
+    <script src="../../js/common2.js"></script>
+</head>
+<body>
+	<!-- 헤더 영역 -->
+	<header>
+		<div class="head-side">
+			<a href="" class="icon icon-back">이전으로</a>
+		</div>
+		<div class="head-title">
+			<h1>배반송내역</h1>
+		</div>
+		<div class="head-side">
+		</div>
+	</header>
+
+	<!-- 내용 영역 -->
+	<section class="pt16">
+		<div class="container">
+
+			<div class="m-tags type01">
+				<div class="m-tag-wrap">
+					<button type="button" class="m-tag">1개월</button>
+				</div>
+				<div class="m-tag-wrap">
+					<button type="button" class="m-tag">2개월</button>
+				</div>
+				<div class="m-tag-wrap">
+					<button type="button" class="m-tag">6개월</button>
+				</div>
+				<div class="m-tag-wrap">
+					<button type="button" class="m-tag">전체</button>
+				</div>
+			</div>
+
+			<div class="m-inputs type01 mb12 mt12">
+				<div class="m-input-wrap">
+					<div class="input-box" style="padding:12px;">
+						<div class="box">
+							<input type="date" placeholder="" style="padding-right:0;">
+						</div>
+					</div>
+				</div>
+				<div class="deco">~</div>
+				<div class="m-input-wrap">
+					<div class="input-box" style="padding:12px;">
+						<div class="box">
+							<input type="date" placeholder="" style="padding-right:0;">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="m-tags type02 mb12">
+				<div class="m-tag-wrap" style="flex:1;">
+					<button type="button" class="m-tag width-100 active">전체</button>
+				</div>
+				<div class="m-tag-wrap" style="flex:1;">
+					<button type="button" class="m-tag width-100">배반송대기</button>
+				</div>
+				<div class="m-tag-wrap" style="flex:1;">
+					<button type="button" class="m-tag width-100">배반송완료</button>
+				</div>
+			</div>
+
+			<!-- 배반송 업무가 없을 경우
+				<div class="m-empty type01">배반송 업무가 없습니다.</div>
+			-->
+
+			<div class="toggle-box mb50">
+				<ul class="list">
+					<li class="list-item active" style="border:1px solid #e1e1e1;">
+						<div class="toggle-body">
+							<div class="gray-box">
+								<div class="list-space-box bd type-car">
+									<ul>
+										<li class="title-li">
+											<p class="f16"><b class="f20 mr5">더 뉴 아반떼</b></p>
+											<p><i class="xi-angle-right"></i></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">차량번호</b></p>
+											<p><b class="">000가000</b></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">배송일시</b></p>
+											<p><b class="">2022.00.00 00:00</b></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">배송장소</b></p>
+											<p><b class="">서울시 00구 00로 000</b></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">인수자</b></p>
+											<p><b class="">홍길동 (010-0000-0000)</b></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="toggle-head">
+							<div class="list-title-box">
+								<dl>
+									<dd>
+										<div class="tit">
+											<strong class="primary">배송대기</strong>
+										</div>
+										<div class="cont">
+											<p><b class=" fw7">배정기사 : 강길동</b></p>
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+
+					<li class="list-item active" style="border:1px solid #e1e1e1;">
+						<div class="toggle-body car">
+							<div class="gray-box">
+								<div class="list-space-box bd type-car">
+									<ul>
+										<li class="title-li">
+											<p class="f16"><b class="f20 mr5">더 뉴 아반떼</b></p>
+											<p><i class="xi-angle-right"></i></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">차량번호</b></p>
+											<p><b class="">000가000</b></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">반송일시</b></p>
+											<p><b class="">2022.00.00 00:00</b></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">배송장소</b></p>
+											<p><b class="">서울시 00구 00로 000</b></p>
+										</li>
+										<li>
+											<p class="f16"><b class="f16 mr5">반납자</b></p>
+											<p><b class="">홍길동 (010-0000-0000)</b></p>
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="toggle-head">
+							<div class="list-title-box">
+								<dl>
+									<dd>
+										<div class="tit">
+											<strong class="accent">반송대기</strong>
+										</div>
+										<div class="cont">
+											<p><b class=" fw7">배정기사 : 강길동</b></p>
+										</div>
+									</dd>
+								</dl>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+
+		</div>
+	</section>
+
+	<!-- 하단 네비게이션바 -->
+	<footer class="m-navigation type01">
+		<div class="navs">
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav1.png" alt="">
+					<h3 class="title">HOME</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav2.png" alt="">
+					<h3 class="title">계약체결</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav3.png" alt="">
+					<h3 class="title">계약내역</h3>
+				</a>
+			</div>
+			<div class="nav-wrap">
+				<a href="#" class="nav">
+					<img src="../../images/nav4.png" alt="">
+					<h3 class="title">이용안내</h3>
+				</a>
+			</div>
+			<div class="nav-wrap active">
+				<a href="#" class="nav">
+					<img src="../../images/nav5.png" alt="">
+					<h3 class="title">MY</h3>
+				</a>
+			</div>
+		</div>
+	</footer>
+<script>
+var swiper = new Swiper(".swiper-container", {
+		spaceBetween: 0,
+		centeredSlides: true,
+		autoplay: {
+			delay: 2500,
+			disableOnInteraction: false,
+		},
+		navigation: {
+			nextEl: ".swiper-button-next",
+			prevEl: ".swiper-button-prev",
+		},
+});
+</script>
+</body>
+</html>

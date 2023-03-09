@@ -163,10 +163,10 @@
 			</div>
 			<div class="button-box mb40">
 				<div class="col-6 pr10">
-					<a href="" class="btn btn-bd-orange btn-lg">계약서</a>
+					<a href="#" class="btn btn-bd-orange btn-lg m-script-toggle" data-target="#bottom-contract">계약서</a>
 				</div>
 				<div class="col-6 pl10">								
-					<a href="" class="btn btn-bd-orange btn-lg">구비서류</a>
+					<a href="#" class="btn btn-bd-orange btn-lg m-script-toggle" data-target="#bottom-document">구비서류</a>
 				</div>
 			</div>
 			<div class="toggle-list-box mb14">
@@ -349,6 +349,70 @@
 			</div>
 		</div>
 	</section>
+
+	<!-- 계약서 팝업창 -->
+	<div class="m-bottom type01" id="bottom-contract">
+		<div class="m-bottom-base m-script-toggle" data-target="#bottom-contract"></div>
+
+		<div class="m-bottom-inner">
+			<div class="m-bottom-top">
+				<h3 class="title">계약서</h3>
+
+				<button type="button" class="btn-close m-script-toggle" data-target="#bottom-contract">
+					<i class="xi-close"></i>
+				</button>
+			</div>
+
+			<div class="m-bottom-content">
+				<div>
+					<button type="button" class="input-box width-100 align-left underline">
+						(필수) 자동차대여약관
+					</button>
+				</div>
+				<div>
+					<button type="button" class="input-box mt16 width-100 align-left underline">
+						(필수) 자동차대여특약
+					</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!-- 구비서류 팝업창 -->
+	<div class="m-bottom type01" id="bottom-document">
+		<div class="m-bottom-base m-script-toggle" data-target="#bottom-document"></div>
+
+		<div class="m-bottom-inner">
+			<div class="m-bottom-top">
+				<h3 class="title">구비서류</h3>
+
+				<button type="button" class="btn-close m-script-toggle" data-target="#bottom-document">
+					<i class="xi-close"></i>
+				</button>
+			</div>
+
+			<div class="m-bottom-content">
+				<div class="input-box mb16">
+					<label for="">사업자등록증</label>
+					<div class="box">
+						<input type="text" placeholder="" value="사업자등록증 @@전자.png" disabled class="underline">
+					</div>
+				</div>
+				<div class="input-box mb16">
+					<label for="">통장사본</label>
+					<div class="box">
+						<input type="text" placeholder="" value="통장사본 @@전자.png" disabled class="underline">
+					</div>
+				</div>
+				<div class="input-box">
+					<label for="">재무제표 1개년치 (선택)</label>
+					<div class="box">
+						<input type="text" placeholder="" value="재무제표 @@전자.pdf" disabled class="underline">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!-- 하단 네비게이션바 -->
 	<footer class="m-navigation type01">

@@ -154,8 +154,13 @@
 									<p>
 										<b>대인 : 무한</b>
 										<small class="mb8">사고 상대방의 인명 피해</small>
+
+										<span style="width:100%;"></span>
+
 										<b>대물 : 5000만원</b>
 										<small class="mb8">사고 상대방의 물적 피해</small>
+
+										<span style="width:100%;"></span>
 										<b>자손 : 무한</b>
 										<small>운전자 본인의 사고 피해</small>
 									</p>
@@ -178,10 +183,10 @@
 					</div>
 					<div class="select-box px15 mb10">
 						<label for="" class="gr">배송장소</label>
-						<div class="box">
-							<select>
-								<option>서울시 중구 세종대로 110, @@전자</option>
-							</select>
+						<div class="box fake m-script-toggle" data-target="#bottom-address">
+							서울시 중구 세종대로 110, @@전자
+
+							<i class="xi-angle-down"></i>
 						</div>
 					</div>
 					<div class="select-box px15 mb10">
@@ -202,11 +207,18 @@
 					</div>
 				</div>
 				<div class="line-box bb0 mb46">
-					<div class="title-box">
-						<strong>반송 정보</strong>
+					<div class="title-box" style="display:flex; align-items: center; justify-content: space-between;">
+						<strong>반납 정보</strong>
+
+						<div class="check-box">
+							<div class="check" style="margin-bottom:20px;">
+								<input type="checkbox" name="checkall" id="checkall">
+								<label for="checkall">배송정보와 동일</label>
+							</div>
+						</div>
 					</div>
 					<div class="select-box px15 mb10">
-						<label for="" class="gr">배송일시</label>
+						<label for="" class="gr">반납일시</label>
 						<div class="box">
 							<select>
 								<option>2022.10.30 09:00</option>
@@ -214,27 +226,21 @@
 						</div>
 					</div>
 					<div class="select-box px15 mb10 disabled">
-						<label for="" class="gr">배송장소</label>
-						<div class="box">
-							<select disabled>
-								<option>서울시 중구 세종대로 110, @@전자</option>
-							</select>
+						<label for="" class="gr">반납장소</label>
+						<div class="box fake">
+							서울시 중구 세종대로 110, @@전자
 						</div>
 					</div>
 					<div class="select-box px15 mb10 disabled">
-						<label for="" class="gr">인수자명</label>
-						<div class="box">
-							<select disabled>
-								<option>홍길동</option>
-							</select>
+						<label for="" class="gr">반납자명</label>
+						<div class="box fake">
+							홍길동
 						</div>
 					</div>
 					<div class="select-box px15 mb10 disabled">
-						<label for="" class="gr">인수자 연락처</label>
-						<div class="box">
-							<select disabled>
-								<option>010 0000 0000</option>
-							</select>
+						<label for="" class="gr">반납자 연락처</label>
+						<div class="box fake">
+							010-0000-0000
 						</div>
 					</div>
 				</div>
@@ -385,6 +391,124 @@
 			</div>
 		</div>
 
+		<!-- 배송일시 팝업창 -->
+		<div class="m-bottom type01" id="bottom-delivery">
+			<div class="m-bottom-base m-script-toggle" data-target="#bottom-delivery"></div>
+
+			<div class="m-bottom-inner">
+				<div class="m-bottom-top">
+					<h3 class="title">배송일시</h3>
+
+					<button type="button" class="btn-close m-script-toggle" data-target="#bottom-delivery">
+						<i class="xi-close"></i>
+					</button>
+				</div>
+
+				<div class="m-bottom-content">
+					<div class="select-box px15 mb10 disabled">
+						<label for="" class="gr">배송일</label>
+						<div class="box fake">
+							2022.10.30
+						</div>
+					</div>
+					<div class="input-box px15 mb10">
+						<label for="" class="gr">배송시간</label>
+
+						<div class="times box">
+							<input type="text" value="09" placeholder="시">
+							<span class="deco">:</span>
+							<input type="text" value="00" placeholder="분">
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 배송장소 팝업창 -->
+		<div class="m-bottom type01" id="bottom-address">
+			<div class="m-bottom-base m-script-toggle" data-target="#bottom-address"></div>
+
+			<div class="m-bottom-inner">
+				<div class="m-bottom-top">
+					<h3 class="title">주소</h3>
+
+					<button type="button" class="btn-close m-script-toggle" data-target="#bottom-address">
+						<i class="xi-close"></i>
+					</button>
+				</div>
+
+				<div class="m-bottom-content">
+					<div class="m-input-address type01">
+						<div class="m-input-withBtn type01">
+							<div class="m-input m-input-text type01">
+								<input type="text" placeholder="도로명, 지역명, 건물명을 작성해주세요.">
+							</div>
+
+							<button class="m-input-btn m-btn type01">조회</button>
+						</div>
+
+						<div class="boxes">
+							<div class="guide">
+								<h3 class="title">주소를 검색해주세요</h3>
+
+								<p class="body">도로명 + 건물번호 <span class="sub">오금로 125</span></p>
+								<p class="body">지역명(동/리) + 번지 <span class="sub">예)방이동 109-11</span></p>
+								<p class="body">건물명(아파트명) <span class="sub">예) 유미빌딩</span></p>
+							</div>
+						</div>
+
+						<div class="boxes">
+							<div class="box">
+								<span class="category">05507</span>
+
+								<h3 class="title">서울 송파구 오금로 17-2 (가로판매대)</h3>
+								<p class="body">서울 송파구 신천동 15</p>
+							</div>
+
+							<div class="box">
+								<span class="category">05507</span>
+
+								<h3 class="title">서울 송파구 오금로 17-2 (가로판매대)</h3>
+								<p class="body">서울 송파구 신천동 15</p>
+							</div>
+
+							<div class="box">
+								<span class="category">05507</span>
+
+								<h3 class="title">서울 송파구 오금로 17-2 (가로판매대)</h3>
+								<p class="body">서울 송파구 신천동 15</p>
+							</div>
+
+							<div class="box">
+								<span class="category">05507</span>
+
+								<h3 class="title">서울 송파구 오금로 17-2 (가로판매대)</h3>
+								<p class="body">서울 송파구 신천동 15</p>
+							</div>
+						</div>
+
+						<div class="mt-16"></div>
+
+						<h3 class="m-input-title type01">상세주소</h3>
+
+						<div class="m-input-text type01">
+							<input type="text" placeholder="상세주소 입력 (동/호/층)">
+						</div>
+
+						<div class="mt-16"></div>
+
+						<div class="m-btns type01">
+							<div class="m-btn-wrap">
+								<!-- 비활성시
+								<button class="m-btn type01 bg-gray">완료</button>
+								-->
+								<button class="m-btn type01">완료</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</section>
 
 	<!-- 하단 네비게이션바 -->
