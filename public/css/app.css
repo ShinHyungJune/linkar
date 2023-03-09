@@ -81,6 +81,7 @@ header .head-title h1.logo {font-size:24px; font-weight:bold; color:#C74F30;}
 .select-box label {display:block; font-size:12px; color:#585858; font-weight:700; margin:0 0 6px;}
 .select-box label.gr {color:#c1c1c1;}
 .select-box .box {display:flex; flex-wrap:wrap; align-items:center;}
+.select-box .box.fake {justify-content: space-between; font-size:14px;}
 .select-box .box select {appearance:none; -webkit-appearance:none; flex:1; min-width:0; height:16px; font-size:14px; padding-right:24px; color:#000; background:url('../images/app/icon_select.png') no-repeat right center / 16px 16px;}
 .select-box .box select::placeholder {color:#c1c1c1;}
 .select-box.disabled {background:#F5F5F5; border-color:#F5F5F5;}
@@ -273,6 +274,7 @@ header .head-title h1.logo {font-size:24px; font-weight:bold; color:#C74F30;}
 .list-title-box2 dl dd .tit {display:flex; flex-wrap:wrap; align-items:center; width:80px;}
 .list-title-box2 dl dd .tit strong {display:flex; flex-wrap:wrap; align-items:center; font-size:12px; line-height:1.5; font-weight:700; color:#585858; margin:0;}
 .list-title-box2 dl dd .tit strong:before {display:inline-block; width:2px; height:14px; background:#707070; content:""; margin-right:5px;}
+.list-title-box2 dl dd .tit strong.primary:before {background:#F25C35;}
 .list-title-box2 dl dd .cont {flex:1; min-width:0;}
 .list-title-box2 dl dd .cont p {font-size:14px; line-height:1.3; color:#585858; font-weight:500; word-break:keep-all;}
 

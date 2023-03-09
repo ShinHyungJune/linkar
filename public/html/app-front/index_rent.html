@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>[앱] 2.2. Home_렌트사</title>
+
+    <!-- 캘린더 관련 -->
+    <link href='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.css' rel='stylesheet' />
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/themes/smoothness/jquery-ui.css">
+
+    <link rel="stylesheet" type="text/css" href="../../css/common.css">
+    <link rel="stylesheet" type="text/css" href="../../css/swiper.min.css">
+     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel="stylesheet" type="text/css" href="../../css/style.css">
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="../css/datepicker.min.css"> -->
+
+    <script src="../../js/jquery.js"></script>
+
+    <!-- 캘린더 관련 -->
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/main.min.js'></script>
+    <script src='https://cdn.jsdelivr.net/npm/fullcalendar@5.8.0/locales-all.min.js'></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+
+    <script src="../../js/swiper.min.js"></script>
+    <script src="../../js/common.js"></script>
+
+
+</head>
+<body>
+<div id="app">
+    <div class="area-index-rent">
+        <!-- 헤더영역 -->
+        <div class="m-header type01">
+            <a href="#" class="logo">
+                <img src="../../images/logo.png" alt="">
+            </a>
+        </div>
+
+        <!-- 내용 영역 -->
+        <div class="container">
+            <div class="wrap">
+                <div class="m-calendar type01">
+                    <div class="box-top">
+                        <h3 class="title m-title type01">배반송 스케줄</h3>
+
+                        <div class="labels">
+                            <div class="label state01">
+                                <span class="circle"></span>
+                                배송
+                            </div>
+
+                            <div class="label state02">
+                                <span class="circle"></span>
+                                반송
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="datepicker"></div>
+                </div>
+
+                <div class="mt-24"></div>
+
+                <!-- 배반송내역이 없을 경우
+                    <div class="m-empty type01">선택한 일자에 배반송 업무가 없습니다</div>
+                -->
+
+
+                <div class="m-swiper type01">
+                    <div class="swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="labels">
+                                    <div class="label state01">배송</div>
+                                    <!-- <div class="label state02">반송</div> -->
+                                    <div class="label">The all-new K3</div>
+                                    <div class="label">000가 0000</div>
+                                </div>
+
+                                <div class="infos">
+                                    <div class="info">
+                                        <h3 class="info-title">배송일시</h3>
+                                        <p class="info-body">2022.10.30 09:00</p>
+                                    </div>
+
+                                    <div class="info">
+                                        <h3 class="info-title">배송장소</h3>
+                                        <p class="info-body underline">서울시 중구 세종대로 110 @@전자</p>
+                                    </div>
+
+                                    <div class="info">
+                                        <h3 class="info-title">인수자명</h3>
+                                        <p class="info-body">홍길동</p>
+                                    </div>
+
+                                    <div class="info">
+                                        <h3 class="info-title">인수자 연락처</h3>
+                                        <p class="info-body">010-0000-0000</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div class="labels">
+                                    <div class="label state02">반송</div>
+                                    <div class="label">The all-new K3</div>
+                                    <div class="label">000가 0000</div>
+                                </div>
+
+                                <div class="infos">
+                                    <div class="info">
+                                        <h3 class="info-title">반송일시</h3>
+                                        <p class="info-body">2022.10.30 09:00</p>
+                                    </div>
+
+                                    <div class="info">
+                                        <h3 class="info-title">배송장소</h3>
+                                        <p class="info-body underline">서울시 중구 세종대로 110 @@전자</p>
+                                    </div>
+
+                                    <div class="info">
+                                        <h3 class="info-title">반납자명</h3>
+                                        <p class="info-body">홍길동</p>
+                                    </div>
+
+                                    <div class="info">
+                                        <h3 class="info-title">반납자 연락처</h3>
+                                        <p class="info-body">010-0000-0000</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="swiper-btns type01">
+                        <div class="swiper-btn swiper-btn-prev">
+                            <i class="xi-angle-left"></i>
+                        </div>
+                        <div class="swiper-pagination-new"></div>
+                        <div class="swiper-btn swiper-btn-next">
+                            <i class="xi-angle-right"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 하단 네비게이션바 -->
+        <div class="m-navigation type01">
+            <div class="navs">
+                <div class="nav-wrap active">
+                    <a href="#" class="nav">
+                        <img src="../../images/nav1.png" alt="">
+
+                        <h3 class="title">HOME</h3>
+                    </a>
+                </div>
+
+                <div class="nav-wrap">
+                    <a href="#" class="nav">
+                        <img src="../../images/nav2.png" alt="">
+
+                        <h3 class="title">배반송내역</h3>
+                    </a>
+                </div>
+
+                <div class="nav-wrap">
+                    <a href="#" class="nav">
+                        <img src="../../images/nav4.png" alt="">
+
+                        <h3 class="title">이용안내</h3>
+                    </a>
+                </div>
+
+                <div class="nav-wrap">
+                    <a href="#" class="nav">
+                        <img src="../../images/nav5.png" alt="">
+
+                        <h3 class="title">MY</h3>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+<script>
+    // 캘린더
+    $.datepicker.setDefaults({
+        dateFormat: 'yymmdd',
+        prevText: '이전 달',
+        nextText: '다음 달',
+        monthNames: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        monthNamesShort: ['1월', '2월', '3월', '4월', '5월', '6월', '7월', '8월', '9월', '10월', '11월', '12월'],
+        dayNames: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesShort: ['일', '월', '화', '수', '목', '금', '토'],
+        dayNamesMin: ['일', '월', '화', '수', '목', '금', '토'],
+        showMonthAfterYear: true,
+        yearSuffix: '년',
+    });
+
+    // 캘린더
+    $(function() {
+        $("#datepicker").datepicker({
+            beforeShowDay: function(date) {
+                if (date.getDate() == 15) {
+                    return [true, "date date-" + date.getDate()];
+                }
+                return [true];
+            }
+        });
+
+        $(".date-15").append("<div class=\"circles\">\n" +
+            "    <div class=\"circle state01\"></div>\n" +
+            "    <div class=\"circle state02\"></div>\n" +
+            "</div>");
+    });
+
+    // 스와이퍼
+    new Swiper('.swiper-container', {
+        pagination: {
+            el: ".swiper-pagination-new",   //페이징 태그 클래스 설정
+            type : 'fraction'
+        },
+        navigation: {
+            nextEl: ".swiper-btn-next",
+            prevEl: ".swiper-btn-prev",
+        },
+    });
+</script>
+</body>
+</html>

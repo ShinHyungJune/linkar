@@ -113,15 +113,15 @@
 					</div>
 					<div class="select-box mb12 px15">
 						<label for="" class="gr">고객구분</label>
-						<div class="box">
-							<select>
-								<option>법인사업자</option>
-							</select>
+						<div class="box fake m-script-toggle" data-target="#bottom-customer">
+							법인사업자
+
+							<i class="xi-angle-down"></i>
 						</div>
 					</div>
 					<div class="input-box px15">
 						<label class="gr">사업자 정보</label>
-						<div class="box">
+						<div class="box m-script-toggle" data-target="#bottom-info" style="display:flex; align-items:flex-start; width:100%; justify-content: space-between">
 							<p>
 								주식회사 @@전자 (110-00-00000)<br>
 								서비스업 / 전자설비 설치용역<br>
@@ -129,12 +129,14 @@
 								대표자 홍길동<br>
 								00-0000-000
 							</p>
+
+							<i class="xi-angle-down"></i>
 						</div>
 					</div>
 				</div>
 				<div class="line-box">
 					<div class="title-box">
-						<strong>보험정보</strong>	
+						<strong>보험정보</strong>
 					</div>
 					<div class="gray-box">
 						<div class="list-space-box">
@@ -168,10 +170,10 @@
 					</div>
 					<div class="select-box px15 mb10">
 						<label for="" class="gr">배송일시</label>
-						<div class="box">
-							<select>
-								<option>2022.10.30 09:00</option>
-							</select>
+						<div class="box fake m-script-toggle" data-target="#bottom-delivery">
+							2022.10.30 09:00
+
+							<i class="xi-angle-down"></i>
 						</div>
 					</div>
 					<div class="select-box px15 mb10">
@@ -202,7 +204,7 @@
 				<div class="line-box bb0 mb46">
 					<div class="title-box">
 						<strong>반송 정보</strong>
-					</div> 
+					</div>
 					<div class="select-box px15 mb10">
 						<label for="" class="gr">배송일시</label>
 						<div class="box">
@@ -241,6 +243,148 @@
 				</div>
 			<form>
 		</div>
+
+        <!-- 하단 팝업창 - active 클래스 유무로 toggle -->
+
+		<!-- 고객구분 팝업창 -->
+        <div class="m-bottom type01" id="bottom-customer">
+			<div class="m-bottom-base m-script-toggle" data-target="#bottom-customer"></div>
+
+            <div class="m-bottom-inner">
+                <div class="m-bottom-top">
+                    <h3 class="title">고객구분</h3>
+
+                    <button type="button" class="btn-close m-script-toggle" data-target="#bottom-customer">
+                        <i class="xi-close"></i>
+                    </button>
+                </div>
+
+                <div class="m-bottom-content">
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-customer">
+							<input type="radio" name="" id="">
+							<label for="">개인</label>
+						</div>
+					</div>
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-customer">
+							<input type="radio" name="" id="">
+							<label for="">개인사업자</label>
+						</div>
+					</div>
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-customer">
+							<input type="radio" name="" id="">
+							<label for="">법인사업자</label>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+
+		<!-- 사업자 팝업창 -->
+		<div class="m-bottom type01" id="bottom-info">
+			<div class="m-bottom-base m-script-toggle" data-target="#bottom-info"></div>
+
+			<div class="m-bottom-inner">
+				<div class="m-bottom-top">
+					<h3 class="title">사업자 정보</h3>
+
+					<button type="button" class="btn-close m-script-toggle" data-target="#bottom-info">
+						<i class="xi-close"></i>
+					</button>
+				</div>
+
+				<div class="m-bottom-content">
+					<div class="input-box px15">
+						<label class="gr">사업자명</label>
+						<div class="box">
+							<input type="text" placeholder="사업자명 입력" value="주식회사 @@전자">
+						</div>
+					</div>
+
+					<div class="input-box px15 mt-8">
+						<label class="gr">사업자번호</label>
+						<div class="box">
+							<input type="text" placeholder="사업자번호 입력" value="111-00-0000">
+						</div>
+					</div>
+
+					<div class="select-box mt-8 px15">
+						<label for="" class="gr">업태구분</label>
+						<div class="box fake m-script-toggle" data-target="#bottom-company">
+							서비스업
+
+							<i class="xi-angle-down"></i>
+						</div>
+					</div>
+
+					<div class="input-box px15 mt-8">
+						<label class="gr">업종구분</label>
+						<div class="box">
+							<input type="text" placeholder="업종구분 입력" value="전자설비 설치용역">
+						</div>
+					</div>
+
+					<div class="input-box px15 mt-8">
+						<label class="gr">대표자명</label>
+						<div class="box">
+							<input type="text" placeholder="대표자명 입력" value="홍길동">
+						</div>
+					</div>
+
+					<div class="input-box px15 mt-8">
+						<label class="gr">연락처</label>
+						<div class="box">
+							<input type="text" placeholder="연락처 입력" value="02-000-0000">
+						</div>
+					</div>
+				</div>
+
+				<div class="m-bottom-btns">
+					<div class="m-btn-wrap">
+						<button type="button" class="m-btn type01 m-script-toggle" data-target="#bottom-info">완료</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- 업태구분 팝업창 -->
+		<div class="m-bottom type01" id="bottom-company">
+			<div class="m-bottom-base m-script-toggle" data-target="#bottom-company"></div>
+
+			<div class="m-bottom-inner">
+				<div class="m-bottom-top">
+					<h3 class="title">고객구분</h3>
+
+					<button type="button" class="btn-close m-script-toggle" data-target="#bottom-company">
+						<i class="xi-close"></i>
+					</button>
+				</div>
+
+				<div class="m-bottom-content">
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-company">
+							<input type="radio" name="" id="">
+							<label for="">@@업</label>
+						</div>
+					</div>
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-company">
+							<input type="radio" name="" id="">
+							<label for="">@@업</label>
+						</div>
+					</div>
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-company">
+							<input type="radio" name="" id="">
+							<label for="">@@업</label>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</section>
 
 	<!-- 하단 네비게이션바 -->
