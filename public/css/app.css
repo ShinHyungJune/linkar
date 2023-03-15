@@ -126,8 +126,16 @@ header .head-title h1.logo {font-size:24px; font-weight:bold; color:#C74F30;}
 .button-box .btn-bd-gray {border:1px solid #585858; color:#585858;}
 .button-box .btn-bd-lightgray {border:1px solid #E4E4E4; color:#C1C1C1;}
 .button-box .btn-bd-orange {border:1px solid #F25C35; color:#F25C35;}
-.button-box .btn-kakao {background:#fee500; position:relative; color:#000;}
-.button-box .btn-kakao:before {position:absolute; left:15px; top:50%; transform:translateY(-50%); width:21.5px; height:20px; background:url('../images/app/icon_kakao.png') no-repeat center / cover; content:"";}
+.button-box .btn-kakao {
+    display:flex; align-items: center; justify-content: center;
+    background:#fee500; position:relative; color:#000;
+}
+.button-box .btn-kakao:before {
+    width:21.5px; height:20px;
+    margin-right:12px;
+    background:url('../images/app/icon_kakao.png') no-repeat center / cover; content:"";
+    position:static;
+}
 
 /* agree-list-box */
 .agree-list-box.bt {border-top:1px solid #303030; padding:18px 0 0; margin:16px 0 0;}
