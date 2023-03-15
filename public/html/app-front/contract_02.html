@@ -94,13 +94,13 @@
 					</div>
 					<div class="select-box mb12 px15">
 						<label for="" class="gr">결제수단</label>
-						<div class="box">
-							<select>
-								<option>카드결제</option>
-							</select>
+						<div class="box fake m-script-toggle" data-target="#bottom-payMethod">
+							카드결제 / 현대M카드 (0001)
+
+							<i class="xi-angle-down"></i>
 						</div>
 					</div>
-					<div class="select-box mb12 px15">
+					<!--<div class="select-box mb12 px15">
 						<label for="" class="gr">카드유형</label>
 						<div class="box">
 							<select>
@@ -132,18 +132,18 @@
 						<div class="box">
 							<input type="text" value="900000">
 						</div>
-					</div>
+					</div>-->
 					<div class="text-box mb38">
 						<div>
 							<sub>※</sub>
-							<p>등록하신 결제 정보로 매월 자동결제가 진행됩니다.</p>
+							<p>2개월 이상 계약 시, 선택하신 결제수단으로 매월 자동결제가 진행됩니다.</p>
 						</div>
 						<div>
 							<sub>※</sub>
 							<p>결제일 : 매 회차 종료 5일 전 (결제 이틀 전 안내문자 발송)</p>
 						</div>
 					</div>
-					<div class="title-box mb15">
+					<!--<div class="title-box mb15">
 						<h2>
 							<b class="f16">결제 서비스 이용약관</b>
 						</h2>  
@@ -180,7 +180,7 @@
 								</li>
 							</ul>
 						</div>
-					</div>
+					</div>-->
 				</div>
 				<div class="button-box pb32">
 					<div class="col-6 pr5">
@@ -191,6 +191,36 @@
 					</div>
 				</div>
 			<form>
+		</div>
+
+		<!-- 결제수단 팝업창 -->
+		<div class="m-bottom type01" id="bottom-payMethod">
+			<div class="m-bottom-base m-script-toggle" data-target="#bottom-payMethod"></div>
+
+			<div class="m-bottom-inner">
+				<div class="m-bottom-top">
+					<h3 class="title">결제수단</h3>
+
+					<button type="button" class="btn-close m-script-toggle" data-target="#bottom-payMethod">
+						<i class="xi-close"></i>
+					</button>
+				</div>
+
+				<div class="m-bottom-content">
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-payMethod">
+							<input type="radio" name="" id="">
+							<label for="">카드결제 / 현대M카드 (0001)</label>
+						</div>
+					</div>
+					<div class="check-box lg mt-16">
+						<div class="check m-script-toggle" data-target="#bottom-payMethod">
+							<input type="radio" name="" id="">
+							<label for="">계좌이체 / 국민은행 (주식회사@@)</label>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</section>
 
